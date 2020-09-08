@@ -1,24 +1,29 @@
 body{
     background-color: lightskyblue;
+    max-width: 1280px;
+    margin: auto;
 }
 header{
     background-color: dodgerblue;
+    min-height: 100px;
+    line-height: 100px;
 }
 nav{
     background-color: azure;
-    text-align: center;
-    padding: 10px;
-    height: 25px;
-    line-height: 25px;
+    float: left;
+    min-width: 200px;
+    max-width: 300px;
 }
 article{
 }
 aside{
-    background-color: azure;
-    padding: 10px;
+    float: right;
+    min-width: 200px;
+    max-width: 320px;
 }
 footer{
     background-color: darkblue;
+    min-height: 50px;
 }
 p{
     padding: 10px;
@@ -28,18 +33,75 @@ p{
     font-family: "Comic Sans MS", cursive;
 }
 a{
-    color: royalblue;
+    color: azure;
     text-decoration: none;
-    padding: inherit;
-}
-li{
-    color: royalblue;
     font-size: 14pt;
     font-family: "Comic Sans MS", cursive;
 }
+menu{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+li{
+    background-color: cornflowerblue;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+}
+li:hover{
+    background-color: royalblue;
+}
 img{
-    width: 25%;
-    border-radius: 50px;
+    margin: 15px 0px;
+    width: 100%;
+    border-radius: 25px;
+}
+audio{
+    width: 100%;
+}
+table{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 200px;
+    //border: 3px solid azure;
+}
+td{
+    //border: 3px solid azure;
+    color: lightskyblue;
+    text-align: center;
+}
+td:hover{
+    background-color: azure;
+    border-radius: 5px;
+}
+address p{
+    text-align: right;
+    font-size: 14pt;
+}
+/*blockquote p{
+    font-size: 14pt;
+}
+cite p{
+    font-size: 14pt;
+    text-align: right;
+}*/
+kbd{
+    background-color: #111;
+    border-radius: 5px;
+    padding: 10px;
+    color: azure;
+    font-family: Consolas, monospace;
+}
+span{
+    color: royalblue;
+}
+#footer{
+    margin-bottom: 0px;
+}
+#address{
+    margin-top: 0px;
 }
 .title{
     text-align: center;
