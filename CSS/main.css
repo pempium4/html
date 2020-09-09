@@ -6,7 +6,7 @@ body{
 header{
     background-color: dodgerblue;
     min-height: 100px;
-    line-height: 100px;
+    line-height: 80px;
 }
 nav{
     background-color: azure;
@@ -26,13 +26,14 @@ footer{
     min-height: 50px;
 }
 p{
+    margin: 10px;
     padding: 10px;
     text-align: justify;
     color: azure;
     font-size: 18pt;
     font-family: "Comic Sans MS", cursive;
 }
-a{
+address p a, li a{
     color: azure;
     text-decoration: none;
     font-size: 14pt;
@@ -97,6 +98,17 @@ kbd{
 span{
     color: royalblue;
 }
+form{
+    float: right;
+    margin: 10px;
+    line-height: 80px;
+}
+input{
+    padding: 10px;
+    border-radius: 15px;
+    background-color: azure;
+    border: 0px;
+}
 #footer{
     margin-bottom: 0px;
 }
@@ -107,6 +119,6 @@ span{
     text-align: center;
 }
 .div{
-    margin: 0px 15px;
+    margin: 10px 15px;
     border-radius: 10px;
 }

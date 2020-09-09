@@ -1,0 +1,50 @@
+body{
+    background-color: lightskyblue;
+    max-width: 800px;
+    margin: auto;
+}
+p{
+    font-size: 24pt;
+    color: azure;
+    font-family: "Comic Sans MS", cursive;
+}
+form{
+    text-align: center;
+}
+table{
+    margin: auto;
+}
+fieldset{
+    border: 5px solid azure;
+    border-radius: 10px;
+}
+legend{
+    text-align: center;
+}
+td{
+    text-align: left;
+    color: azure;
+    font-size: 14pt;
+    font-family: Georgia, serif;
+}
+#submit{
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    border: 0px;
+    font-size: 18pt;
+    color: azure;
+    border-radius: 5px;
+    background-color: cornflowerblue;
+}
+#submit:hover{
+    background-color: royalblue;
+}
+.input{
+    padding: 10px;
+    width: 200px;
+    box-sizing: content-box;
+    border-radius: 10px;
+    border: 0px;
+    background-color: azure;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Pempium4"/>
+    <link href="CSS/check_in.css" rel="stylesheet">
+    <title>Check In Page</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>
+                <p>Форма регистрации</p>
+            </legend>
+            <table>
+                <tr>
+                    <td>Введите имя:</td>
+                    <td><input class="input" type="text" required autofocus/></td>
+                </tr>
+                <tr>
+                    <td>Введите email:</td>
+                    <td><input class="input" type="email" placeholder="example@gmail.com" required/></td>
+                </tr>
+                <tr>
+                    <td>Введите пароль:</td>
+                    <td><input class="input" type="password" required/></td>
+                </tr>
+                <tr>
+                    <td>Выберите секретный вопрос:</td>
+                    <td><select  class="input">
+                        <option selected value="Первый автомобиль">Первый автомобиль</option>
+                        <option value="В какой школе учились">В какой школе учились</option>
+                        <option value="Любимый музыкальный исполнитель">Любимый музыкальный исполнитель</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td>Ответ на секретный вопрос:</td>
+                    <td><input class="input" type="text"/></td>
+                </tr>
+            </table>
+                <input id="submit" type="reset" value="Зарегистрироваться">
+        </fieldset>
+    </form>
+</body>
+</html>
