@@ -1,12 +1,16 @@
 body{
     background-color: lightskyblue;
     max-width: 1280px;
+    min-width: 960px;
     margin: auto;
 }
 header{
     background-color: dodgerblue;
     min-height: 100px;
     line-height: 80px;
+   /* width: 100%;
+    max-width: inherit;
+    position: fixed;*/
 }
 nav{
     background-color: azure;
@@ -14,7 +18,8 @@ nav{
     min-width: 200px;
     max-width: 300px;
 }
-article{
+article p{
+    text-indent: 25px;
 }
 aside{
     float: right;
@@ -38,11 +43,12 @@ address p a, li a{
     text-decoration: none;
     font-size: 14pt;
     font-family: "Comic Sans MS", cursive;
+    text-transform: capitalize;
 }
 menu{
     list-style: none;
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
 }
 li{
     background-color: cornflowerblue;
@@ -52,9 +58,10 @@ li{
 }
 li:hover{
     background-color: royalblue;
+    box-shadow: 0px 2px 10px rgba(100, 100, 100, 0.75);
 }
 img{
-    margin: 15px 0px;
+    margin: 15px 0;
     width: 100%;
     border-radius: 25px;
 }
@@ -105,20 +112,32 @@ form{
 }
 input{
     padding: 10px;
-    border-radius: 15px;
+    border-radius: 15px; /*20px/40px неравномерный радиус*/
+    background-color: rgba(240, 255, 255, 0.75);
+    border: 0;
+}
+input:hover{
     background-color: azure;
-    border: 0px;
+    box-shadow: 0px 2px 10px rgba(100, 100, 100, 0.75);
 }
 #footer{
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 #address{
-    margin-top: 0px;
+    margin-top: 0;
 }
 .title{
     text-align: center;
 }
 .div{
-    margin: 10px 15px;
-    border-radius: 10px;
+    border-radius: 5px;
+    margin: 10px;
+}
+.block{
+    box-shadow: 0px 2px 10px rgba(100, 100, 100, 0.75);
+}
+@media screen and (max-width: 1000px) {
+    p{
+        font-size: 14pt;
+    }
 }
