@@ -17,10 +17,8 @@ header{
     box-sizing: border-box;*/
 }
 nav{
-    background-color: azure;
     float: left;
-    min-width: 200px;
-    max-width: 300px;
+    min-width: 160px;
 }
 article p{
     text-indent: 25px;
@@ -57,39 +55,44 @@ menu{
     counter-reset: link;
 }
 li{
-    background-color: cornflowerblue;
+    background-color: lightskyblue;
     border-radius: 5px;
-    margin: 5px;
+    margin: 4px;
     padding: 10px;
-    text-indent: 36px;
+    box-shadow: 0px 2px 10px rgba(100, 100, 100, 0.75);
+    text-indent: 44px;
     height: 32px;
     line-height: 32px;
+    width: 32px;
+    overflow: hidden;
 }
 li:hover{
     background-color: royalblue;
     box-shadow: 0px 2px 10px rgba(100, 100, 100, 0.75);
     cursor: pointer;
+    width: 120px;
+    transition: width 0.3s ease-in-out;
 }
-li:before{
+li a:before{
     content: "";
     width: 32px;
     height: 32px;
     display: block;
     position: absolute;
 }
-li:nth-child(1):before{
+li:nth-child(1) a:before{
     background-image: url("https://icon-icons.com/icons2/122/PNG/32/twitter_socialnetwork_20007.png");
 }
-li:nth-child(2):before{
+li:nth-child(2) a:before{
     background-image: url("https://icon-icons.com/icons2/642/PNG/32/facebook_icon-icons.com_59205.png");
 }
-li:nth-child(3):before{
+li:nth-child(3) a:before{
     background-image: url("https://icon-icons.com/icons2/923/PNG/32/telegram_icon-icons.com_72055.png");
 }
-li:nth-child(4):before{
+li:nth-child(4) a:before{
     background-image: url("https://icon-icons.com/icons2/806/PNG/32/whatsapp_icon-icons.com_65942.png");
 }
-li:nth-child(5):before{
+li:nth-child(5) a:before{
     background-image: url("https://icon-icons.com/icons2/851/PNG/32/pikachu_icon-icons.com_67535.png");
 }
 li a:after{
