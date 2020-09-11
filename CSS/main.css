@@ -4,13 +4,17 @@ body{
     min-width: 960px;
     margin: auto;
 }
+
+
 header{
     background-color: dodgerblue;
     min-height: 100px;
     line-height: 80px;
-   /* width: 100%;
+    /*width: 100%;
     max-width: inherit;
-    position: fixed;*/
+    min-width: 960px;
+    position: fixed;
+    box-sizing: border-box;*/
 }
 nav{
     background-color: azure;
@@ -30,6 +34,8 @@ footer{
     background-color: darkblue;
     min-height: 50px;
 }
+
+
 p{
     margin: 10px;
     padding: 10px;
@@ -38,6 +44,60 @@ p{
     font-size: 18pt;
     font-family: "Comic Sans MS", cursive;
 }
+p::selection{
+    background-color: azure;
+    color: darkblue;
+}
+
+
+menu{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    counter-reset: link;
+}
+li{
+    background-color: cornflowerblue;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 10px;
+    text-indent: 36px;
+    height: 32px;
+    line-height: 32px;
+}
+li:hover{
+    background-color: royalblue;
+    box-shadow: 0px 2px 10px rgba(100, 100, 100, 0.75);
+    cursor: pointer;
+}
+li:before{
+    content: "";
+    width: 32px;
+    height: 32px;
+    display: block;
+    position: absolute;
+}
+li:nth-child(1):before{
+    background-image: url("https://icon-icons.com/icons2/122/PNG/32/twitter_socialnetwork_20007.png");
+}
+li:nth-child(2):before{
+    background-image: url("https://icon-icons.com/icons2/642/PNG/32/facebook_icon-icons.com_59205.png");
+}
+li:nth-child(3):before{
+    background-image: url("https://icon-icons.com/icons2/923/PNG/32/telegram_icon-icons.com_72055.png");
+}
+li:nth-child(4):before{
+    background-image: url("https://icon-icons.com/icons2/806/PNG/32/whatsapp_icon-icons.com_65942.png");
+}
+li:nth-child(5):before{
+    background-image: url("https://icon-icons.com/icons2/851/PNG/32/pikachu_icon-icons.com_67535.png");
+}
+li a:after{
+    counter-increment: link;
+    content: " #" counter(link);
+}
+
+
 address p a, li a{
     color: azure;
     text-decoration: none;
@@ -45,21 +105,12 @@ address p a, li a{
     font-family: "Comic Sans MS", cursive;
     text-transform: capitalize;
 }
-menu{
-    list-style: none;
-    padding: 0;
-    margin: 0;
+address p{
+    text-align: right;
+    font-size: 14pt;
 }
-li{
-    background-color: cornflowerblue;
-    border-radius: 5px;
-    margin: 10px;
-    padding: 10px;
-}
-li:hover{
-    background-color: royalblue;
-    box-shadow: 0px 2px 10px rgba(100, 100, 100, 0.75);
-}
+
+
 img{
     margin: 15px 0;
     width: 100%;
@@ -68,6 +119,8 @@ img{
 audio{
     width: 100%;
 }
+
+
 table{
     margin-left: auto;
     margin-right: auto;
@@ -79,14 +132,12 @@ td{
     //border: 3px solid azure;
     color: lightskyblue;
     text-align: center;
+    user-select: none;
 }
 td:hover{
     background-color: azure;
     border-radius: 5px;
-}
-address p{
-    text-align: right;
-    font-size: 14pt;
+    transition: 0.5s ease-in-out;
 }
 /*blockquote p{
     font-size: 14pt;
@@ -105,6 +156,8 @@ kbd{
 span{
     color: royalblue;
 }
+
+
 form{
     float: right;
     margin: 10px;
@@ -120,12 +173,19 @@ input:hover{
     background-color: azure;
     box-shadow: 0px 2px 10px rgba(100, 100, 100, 0.75);
 }
+input:last-child:hover{
+    cursor: pointer;
+}
+
+
 #footer{
     margin-bottom: 0;
 }
 #address{
     margin-top: 0;
 }
+
+
 .title{
     text-align: center;
 }
@@ -136,6 +196,8 @@ input:hover{
 .block{
     box-shadow: 0px 2px 10px rgba(100, 100, 100, 0.75);
 }
+
+
 @media screen and (max-width: 1000px) {
     p{
         font-size: 14pt;
