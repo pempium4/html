@@ -1,0 +1,41 @@
+/*
+var name = prompt("Привет! Как Вас зовут?");
+console.log("Привет " + name);
+var opinion = confirm("Тебя зовут Дима?");
+if(opinion){
+    console.log("Всё в порядке.")
+} else{
+    console.log("Выйди отсюда!")
+};
+alert("Хватит на сегодня!");*/
+
+function game() {
+    var words = ["ПРОГРАММА", "ЁЖИК", "БАНАН", "ЦИВИЛИЗАЦИЯ", "МАКРОМЕДИА"];
+    var word = words[Math.floor(Math.random()*words.length)];
+    var answer = [];
+    for(var i =0; i < word.length; i++){
+        answer[i] = "_";
+    }
+    var letters = word.length;
+
+    while (letters > 0) {
+        var letter = prompt("Угадай букву (напиши в верхнем регистре) или Заверши игру нажав 'Отмена'");
+        if (letter === false) {
+            break;
+        } else if (letter.length > 1) {
+            alert("Введите лишь ОДНУ букву!")
+        } else {
+            for (var j = 0; j < word.length; j++) {
+                if (answer[j] === letter) {
+                    alert("Эта буква уже угадана! Введите другую");
+                    break;
+                } else if (word[j] === letter) {
+                    answer[j] = letter;
+                    letters--;
+                }
+            }
+        }
+        alert(answer.join(" "));
+    }
+    alert("Отлично! Вы отгадали слово " + word);
+}

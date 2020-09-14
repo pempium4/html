@@ -66,23 +66,32 @@
             <!--<pre>   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Commodi cum ducimus earum, eligendi eum fugiat inventore laudantium molestiae natus, odit perspiciatis quam quia, sed suscipit unde?
                 A aperiam iste nobis quibusdam sed! Nostrum, temporibus!</pre>-->
-            <p><kbd>Ctrl</kbd> + <a href="#top" style="text-decoration: none;"><kbd>F5</kbd></a> - обновить страницу</p>
+            <p><kbd onclick="game();">Ctrl</kbd> + <a href="#top" style="text-decoration: none;"><kbd>F5</kbd></a> - обновить страницу</p>
             <!--<blockquote><p>Lorem ipsum dolor sit amet.</p></blockquote>
             <cite><p>https://wikihow.com</p></cite>-->
         </section>
         <section id="xyz">
             <div id="first">
-                <iframe src="https://www.youtube.com/embed/aCUbhUvC6FE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe class="block" src="https://www.youtube.com/embed/aCUbhUvC6FE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <div id="second">
-                <iframe src="https://www.youtube.com/embed/s3WrN-nIn7Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe class="block" src="https://www.youtube.com/embed/s3WrN-nIn7Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <div id="third">
-                <iframe src="https://www.youtube.com/embed/TuGgjfV3cbA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe class="block" src="https://www.youtube.com/embed/TuGgjfV3cbA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </section>
         <section id="article">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aspernatur atque consequatur consequuntur corporis debitis deleniti, enim error fuga id impedit, iste nulla quasi quidem soluta suscipit vero? Aliquid at dignissimos eum magnam? Ad architecto asperiores aspernatur beatae dolorem, eveniet fugit ipsam ipsum iure magni maxime minus modi mollitia nesciunt nihil non, pariatur perferendis quaerat qui quo rem repellendus sapiente sequi similique ut veritatis vero. Aliquid aperiam, deserunt earum enim eum excepturi facere fugit maxime necessitatibus nobis obcaecati odit omnis optio quaerat quos recusandae, reiciendis, rerum tempore ullam vel! Aperiam asperiores cumque doloremque eum perspiciatis quidem recusandae velit voluptate voluptates?</p>
+        </section>
+        <section id="bears">
+            <img class="block" src="https://i.pinimg.com/originals/a4/31/eb/a431ebb2134bac6357bc7924d4098ada.jpg" alt="Три мишки" usemap="#buddies"/>
+            <map name="buddies">
+                <area shape="circle" coords="206, 220, 180" title="Dimon4ik"/>
+                <area shape="circle" coords="620, 230, 180" title="Olejka"/>
+                <area shape="circle" coords="1076, 210, 180" title="Pashok"/>
+            </map>
+            <p id="changeDesc" onclick="change();">Придумай смешную подпись</p>
         </section>
     </article>
     <footer class="div block">
@@ -91,11 +100,21 @@
             <p id="address">Contacts: <a href="tel:101">Позвонить 101</a> </p>
         </address>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="JS/main.js"></script>
+    <script src="JS/mini_game.js"></script>
     <script>
-        var name = "kIsloTniY Dj";
-        var result = name[0].toUpperCase()+name.slice(1).toLowerCase();
-        console.log(result);
+        function change(){
+            var changer = document.getElementById("changeDesc");
+            console.log(changer.innerHTML);
+            /*changer.innerHTML = prompt("Введите новую подпись");*/
+            $("#changeDesc").text(prompt("Введите новую подпись"));
+        }
+        /*function add(){
+            $("#article").append("<p>Lorem ipsum dolor sit amet.</p>"); //добавить элемент
+        }*/
+        $("body").hide().fadeIn(1000);
+        /*$("iframe").hide().slideDown(2000);*/
     </script>
 </body>
 </html>

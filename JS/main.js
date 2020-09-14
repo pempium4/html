@@ -47,3 +47,20 @@ var obj = {
 };
 console.log(obj.array[2].number); // or console.log(obj["array"][2]["number"]);
 /*==== HomeWork ===*/
+
+/*==== HomeWork ===*/
+var name = "Dima";
+if(name === "Dima"){
+    console.log("Hello " + name)
+} else {
+    console.log("Hello stranger")
+};
+/*==== HomeWork ===*/
+
+/*==== HomeWork ===*/
+var x = 3;
+while(x < 1000){
+    console.log(x);
+    x*=3;
+}
+/*==== HomeWork ===*/
