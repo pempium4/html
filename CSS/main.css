@@ -133,6 +133,7 @@ table{
 }
 td{
     //border: 3px solid azure;
+    border-radius: 5px;
     color: lightskyblue;
     text-align: center;
     user-select: none;
@@ -141,7 +142,6 @@ td{
 td:hover{
     /*visibility: visible;*/
     background-color: azure;
-    border-radius: 5px;
     transition: 0.5s ease-in-out;
 }
 /*blockquote p{
@@ -207,9 +207,38 @@ input:last-child:hover{
 #bears{
     padding: 10px;
 }
+#buttons{
+    height: 50px;
+    width: 100%;
+}
+#buttons td{
+    cursor: pointer;
+    background: rgba(240, 255, 255, 0.3);
+    font-family: "Comic Sans MS", cursive;
+    font-size: 14pt;
+    width: 50%;
+}
+#buttons td:hover{
+    background: azure;
+}
 #changeDesc{
     text-align: center;
     cursor: pointer;
+}
+#treasures{
+    margin: 0;
+    text-align: right;
+}
+#treasures a{
+    border-radius: 5px;
+    color: lightskyblue;
+    font-size: 14pt;
+    padding: 10px;
+    text-decoration: none;
+}
+#treasures a:hover{
+    background: azure;
+    transition: 0.5s ease-in-out;
 }
 
 #xyz{

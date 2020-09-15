@@ -64,3 +64,47 @@ while(x < 1000){
     x*=3;
 }
 /*==== HomeWork ===*/
+
+function boo(){
+    alert("Иди поспи, реально.");
+};
+var timer = setTimeout(boo, 1000);
+clearTimeout(timer);
+
+/*var counterTime = 1;
+function message(){
+    console.log("Ты смотришь в консоль уже " + counterTime + " сек");
+    counterTime++;
+        if(counterTime > 5){
+            clearTimeout(intervalTimer);
+        }
+};
+var intervalTimer = setInterval(message, 1000);
+*/
+
+/*
+var leftOffset = 0;
+var moving = function(){
+    $("#footer").offset({left: leftOffset});
+    leftOffset++;
+    if(leftOffset > 100){
+        leftOffset = 0;
+    }
+};
+setInterval(moving, 50);
+*/
+
+function clickHandler(event){
+    console.log("Координаты: X - " + event.pageX + " Y - " + event.pageY);
+};
+$("body").click(clickHandler);
+
+/*
+function moveHandler(event){
+    $("#footer").offset({
+        left: event.pageX,
+        top: event.pageY
+    });
+};
+$("html").mousemove(moveHandler);
+*/
