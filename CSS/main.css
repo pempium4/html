@@ -225,6 +225,14 @@ input:last-child:hover{
     text-align: center;
     cursor: pointer;
 }
+#canvas{
+    border: 2px dashed #4169e1;
+    border-radius: 5px;
+    box-sizing: border-box;
+    height: 300px;
+    margin: 0;
+    width: 100%;
+}
 #treasures{
     margin: 0;
     text-align: right;

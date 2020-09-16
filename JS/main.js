@@ -71,7 +71,8 @@ function boo(){
 var timer = setTimeout(boo, 1000);
 clearTimeout(timer);
 
-/*var counterTime = 1;
+/*============ clearTimeout ==========
+var counterTime = 1;
 function message(){
     console.log("Ты смотришь в консоль уже " + counterTime + " сек");
     counterTime++;
@@ -80,9 +81,9 @@ function message(){
         }
 };
 var intervalTimer = setInterval(message, 1000);
-*/
+============ clearTimeout ==========*/
 
-/*
+/*========== leftOffset ============
 var leftOffset = 0;
 var moving = function(){
     $("#footer").offset({left: leftOffset});
@@ -92,14 +93,16 @@ var moving = function(){
     }
 };
 setInterval(moving, 50);
-*/
+========== leftOffset ============*/
 
+/*======== click ==========
 function clickHandler(event){
     console.log("Координаты: X - " + event.pageX + " Y - " + event.pageY);
 };
 $("body").click(clickHandler);
+======== click ==========*/
 
-/*
+/*======= mousemove ==========
 function moveHandler(event){
     $("#footer").offset({
         left: event.pageX,
@@ -107,4 +110,24 @@ function moveHandler(event){
     });
 };
 $("html").mousemove(moveHandler);
-*/
+======= mousemove ==========*/
+
+/*======= constructor ==========
+function Coords(x, y){
+    this.x = x;
+    this.y = y;
+};
+
+var audi = new Coords(150, 250);
+
+Coords.prototype.model = function (){
+    console.log("X = " + this.x + " Y = " + this.y);
+};
+
+audi.model();*/
+
+/*function model(car){
+    console.log("X = " + car.x + " Y = " + car.y);
+};
+model(nissan);
+======= constructor ==========*/
