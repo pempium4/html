@@ -1,9 +1,9 @@
-var canvas = document.getElementById("canvas");
+var canvas = document.getElementById("fCanvas");
 if(canvas.getContext){
     var ctx = canvas.getContext('2d');
 }
 
-ctx.fillStyle = "rgba(240, 255, 255)";
+/*ctx.fillStyle = "rgba(240, 255, 255)";
 ctx.fillRect (10, 10, 60, 60);
 
 ctx.strokeStyle = "blue";
@@ -37,7 +37,7 @@ ctx.lineTo(150, 10);
 ctx.lineTo(120, 50);
 ctx.lineTo(120, 110);
 ctx.fill();
-ctx.stroke();
+ctx.stroke();*/
 
 /*==== rounds =====
 ctx.strokeStyle = "blue";
@@ -52,7 +52,7 @@ ctx.arc(250, 50, 10, 0, Math.PI * 2, false);
 ctx.stroke();
 ===== rounds =====*/
 
-ctx.strokeStyle = "black";
+/*ctx.strokeStyle = "black";
 ctx.fillStyle = "azure";
 ctx.lineWidth = 1;
 ctx.beginPath();
@@ -85,7 +85,7 @@ ctx.fill();
 ctx.fillStyle = "coral";
 ctx.beginPath();
 ctx.arc(215, 57, 2, 0, Math.PI * 2, false);
-ctx.fill();
+ctx.fill();*/
 
 /*======= moving ========
 var position = 0;
@@ -159,3 +159,174 @@ function bee(){
     ctx.strokeRect(0, 0, 200, 200);
 };
 setInterval(bee, 50);*/
+
+/*====== ball =======
+var x = 60;
+var y = 140;
+
+var directX, directY = true;
+
+ctx.fillStyle = "azure";
+
+function drawBall(x, y){
+    ctx.beginPath();
+    ctx.arc(x, y, 5, 0, Math.PI * 2, false);
+    ctx.fill();
+};
+
+function updateX(coords){
+    if(coords === 300){
+        directX = false;
+    }else if(coords === 0){
+        directX = true;
+    }
+    if(directX === true){
+        this.coords = ++coords;
+    }else{
+        this.coords = --coords;
+    }
+    return this.coords;
+};
+
+function updateY(coords){
+    if(coords === 150){
+        directY = false;
+    }else if(coords === 0){
+        directY = true;
+    }
+    if(directY === true){
+        this.coords = ++coords;
+    }else{
+        this.coords = --coords;
+    }
+    return this.coords;
+};
+
+function moving(){
+    ctx.clearRect(0, 0, 300, 150);
+    drawBall(x, y);
+    x = updateX(x);
+    y = updateY(y);
+};
+
+setInterval(moving, 1);
+====== ball =======*/
+
+function Ball(x, y){
+    this.x = x;
+    this.y = y;
+    this.xSpeed = 1;
+    this.ySpeed = 1;
+}
+
+ctx.fillStyle = "azure";
+
+function drawBall(x, y){
+    ctx.beginPath();
+    ctx.arc(x, y, 5, 0, Math.PI * 2, false);
+    ctx.fill();
+};
+
+Ball.prototype.draw = function (){
+    drawBall(this.x, this.y);
+};
+
+Ball.prototype.move = function (){
+    this.x += this.xSpeed;
+    this.y += this.ySpeed;
+};
+
+Ball.prototype.check = function (){
+    if(this.x < 0 || this.x > 300){
+        this.xSpeed = -this.xSpeed;
+    }
+    if(this.y < 0 || this.y > 150){
+        this.ySpeed = -this.ySpeed;
+    }
+};
+
+var ball = new Ball(300, 100);
+
+function moving(){
+    ctx.clearRect(0, 0, 300, 150);
+    ball.draw();
+    ball.move();
+    ball.check();
+};
+
+setInterval(moving, 10);
+
+
+var newCanvas = document.getElementById("sCanvas");
+if(newCanvas.getContext){
+    var nctx = newCanvas.getContext('2d');
+}
+
+var height = newCanvas.height;
+var width = newCanvas.width;
+
+nctx.fillStyle = "azure";
+
+function newBall(x, y){
+    this.x = x;
+    this.y = y;
+    this.xSpeed = 1;
+    this.ySpeed = 0;
+}
+
+newBall.prototype.draw = function (){
+    nctx.beginPath();
+    nctx.arc(this.x, this.y, 5, 0, Math.PI * 2, false);
+    nctx.fill();
+};
+
+newBall.prototype.direction = function (numb){
+    if(numb === 38 || numb === 87){
+        this.xSpeed = 0;
+        this.ySpeed = -1;
+    }else if(numb === 40 || numb === 83){
+        this.xSpeed = 0;
+        this.ySpeed = 1;
+    }else if(numb === 37 || numb === 65){
+        this.xSpeed = -1;
+        this.ySpeed = 0;
+    }else if(numb === 39 || numb === 68){
+        this.xSpeed = 1;
+        this.ySpeed = 0;
+    }else if(numb === 32){
+        this.xSpeed = 0;
+        this.ySpeed = 0;
+    }
+};
+
+newBall.prototype.move = function (){
+    this.x += this.xSpeed;
+    this.y += this.ySpeed;
+    if(this.x < 0){
+        this.x = width;
+    }else if(this.x > width){
+        this.x = 0;
+    }
+    if(this.y < 0){
+        this.y = height;
+    }else if(this.y > height){
+        this.y = 0;
+    }
+};
+
+var newBall = new newBall(100, 100);
+
+function newDirection(event){
+    newBall.direction(event.keyCode);
+};
+
+$("body").keydown(newDirection);
+
+function newMoving(){
+    nctx.clearRect(0, 0, width, height);
+    newBall.draw();
+    newBall.move();
+};
+
+setInterval(newMoving, 10);
+

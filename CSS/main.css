@@ -225,7 +225,7 @@ input:last-child:hover{
     text-align: center;
     cursor: pointer;
 }
-#canvas{
+.canvas{
     border: 2px dashed #4169e1;
     border-radius: 5px;
     box-sizing: border-box;
