@@ -19,10 +19,10 @@
     </header>
     <nav class="div">
         <menu>
-            <li><a href="#1">link</a></li>
-            <li><a href="#2">link</a></li>
-            <li><a href="#3">link</a></li>
-            <li><a href="#4">link</a></li>
+            <li><a href="#1" onclick="game();">link</a></li>
+            <li><a href="treasures.html" target="_blank">link</a></li>
+            <li><a href="snake.html" target="_blank">link</a></li>
+            <li><a href="#4" onclick="arrayCount(), arrayCount2(), arrayCount3()";>link</a></li>
             <li><a href="#5">link</a></li>
         </menu>
         <!-- Быстрое создания ссылок a[href="#"]{Ссылка #$}*5 -->
@@ -66,8 +66,7 @@
             <!--<pre>   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Commodi cum ducimus earum, eligendi eum fugiat inventore laudantium molestiae natus, odit perspiciatis quam quia, sed suscipit unde?
                 A aperiam iste nobis quibusdam sed! Nostrum, temporibus!</pre>-->
-            <p><kbd onclick="game();">Ctrl</kbd> + <a href="#top" style="text-decoration: none;"><kbd>F5</kbd></a> - обновить страницу</p>
-            <p id="treasures"><a href="treasures.html" target="_blank">Найти клад</a></p>
+            <p><kbd>Ctrl</kbd> + <a href="#top" style="text-decoration: none;"><kbd>F5</kbd></a> - обновить страницу</p>
             <!--<blockquote><p>Lorem ipsum dolor sit amet.</p></blockquote>
             <cite><p>https://wikihow.com</p></cite>-->
         </section>
@@ -111,6 +110,7 @@
     <script src="JS/mini_game.js"></script>
     <script src="JS/photogallery.js"></script>
     <script src="JS/canvas.js"></script>
+    <script src="JS/tasks.js"></script>
     <script>
         function change(){
             var changer = document.getElementById("changeDesc");
