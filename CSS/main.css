@@ -6,9 +6,9 @@ body{
 }
 
 header{
-    background: linear-gradient(#4169e1, #6495ed);
     min-height: 100px;
     line-height: 80px;
+    animation: colorchange 20s linear infinite;
     /*width: 100%;
     max-width: inherit;
     min-width: 960px;
@@ -28,8 +28,23 @@ aside{
     max-width: 320px;
 }
 footer{
-    background: linear-gradient(cornflowerblue, royalblue);
     min-height: 50px;
+    animation: colorchange 20s linear infinite;
+}
+
+
+@keyframes colorchange {
+    0% {
+        background: red;
+    }25%{
+         background: blue;
+     }50%{
+          background: green;
+      }75%{
+           background: yellow;
+       }100%{
+            background: red;
+        }
 }
 
 
