@@ -8,22 +8,55 @@
     <title>HTML Blog</title>
 </head>
 <body id="top">
+    <div id="filter" onclick="showModal('none');">
+    </div>
     <header class="div block">
         <form action="">
-            <input type="email" placeholder="Введите почту"/>
-            <input type="password" placeholder="Введите пароль"/>
+            <span id="input">
+                <input type="email" placeholder="Введите почту"/>
+                <input type="password" placeholder="Введите пароль"/>
+            </span>
             <!--<input type="submit" value="Ввойти"/>-->
-            <input type="reset" value="Сбросить"/>
+            <input class="button" type="reset" value="Войти" onclick="showEl();"/>
+            <input class="button" type="submit" value="Регистрация" onclick="showModal('block');"/>
         </form>
-        <p p class="title">Hi! I'm Header</p>
+        <p class="title">Hi! I'm Header</p>
+        <script>
+            var counter = true;
+            var input = document.getElementById("input");
+            input.hidden = true;
+            function showEl(){
+                input.hidden = false;
+                if(counter){
+                    $("#input").hide().fadeIn(2000);
+                    counter = false;
+                }
+                /*if(counter){
+                    input.hidden = false;
+                    counter = false;
+                }else{
+                    input.hidden = true;
+                    counter = true;
+                }*/
+            }
+        </script>
     </header>
+    <div id="div" class="div">
+        <p>Здесь должна быть форма регистрации, но я задолбался менять стили.</p>
+    </div>
+    <script>
+        function showModal(state){
+            document.getElementById("div").style.display = state;
+            document.getElementById("filter").style.display = state;
+        }
+    </script>
     <nav class="div">
         <menu>
             <li><a href="#1" onclick="game();">link</a></li>
             <li><a href="treasures.html" target="_blank">link</a></li>
             <li><a href="snake.html" target="_blank">link</a></li>
             <li><a href="#4" onclick="arrayCount(), arrayCount2(), arrayCount3()";>link</a></li>
-            <li><a href="#5">link</a></li>
+            <li><a href="check_in.html">link</a></li>
         </menu>
         <!-- Быстрое создания ссылок a[href="#"]{Ссылка #$}*5 -->
     </nav>
@@ -31,7 +64,7 @@
         <!-- Быстрый список ul>li{Пункт #$}*4-->
             <img class="block" src="https://kirov-portal.ru/upload/resize_cache/site_afisha_event_1/624_396_1/674/674c1153f9179bceeb596f26d8efc6b1.jpg" alt="Картинка не поддерживается" usemap="#user_link"/>
                 <map name="user_link">
-                    <area shape="circle" coords="177, 87, 72" href="check_in.html" alt="Ссылка" target="_blank"/>
+                    <area shape="circle" coords="177, 87, 72" href="https://www.youtube.com/c/ITDoctor/playlists" alt="Ссылка" target="_blank"/>
                 </map>
                 <audio src="https://cdn4.sefon.pro/files/prev/120/Total%20-%20%D0%91%D1%8C%D1%91%D1%82%20%D0%BF%D0%BE%20%D0%B3%D0%BB%D0%B0%D0%B7%D0%B0%D0%BC%20%28192kbps%29.mp3" controls>Аудиофайл не поддерживается :(</audio>
             <table>
@@ -124,12 +157,13 @@
                 $("#changeDesc").text(desc);
             }
         }
+    </script>
+    <script>
         /*function add(){
             $("#article").append("<p>Lorem ipsum dolor sit amet.</p>"); //добавить элемент
         }*/
-        $("body").hide().fadeIn(1000);
+        /*$("body").hide().fadeIn(1000);*/
         /*$("iframe").hide().slideDown(2000);*/
-
     </script>
 </body>
 </html>

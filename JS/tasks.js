@@ -117,3 +117,24 @@ function fib(num){
 };
 
 fib(13);
+
+console.log("Step");
+
+function step(min, max, step){
+    for(var i = min; i < max; i += step){
+        console.log(i);
+    }
+}
+
+step(12, 67, 8);
+
+console.log("Func");
+
+function func(min, max, step){
+    for(var i = min; i <= max; i += step){
+        var y = -0.23 * Math.pow(i, 2) + i;
+        console.log("X = " + i + " Y = " + y);
+    }
+}
+
+func(1, 3, 0.5);
