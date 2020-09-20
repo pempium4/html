@@ -1,4 +1,4 @@
-var array = [];
+/*var array = [];
 function arrayCount(){
     for(var i = 0; i<10; i++){
         if(i === 0 || i === 9){
@@ -8,9 +8,9 @@ function arrayCount(){
         }
     }
     console.log(array);
-};
+};*/
 /*=======================*/
-var array2 = [];
+/*var array2 = [];
 function arrayCount2(){
     for(var i = 0; i<10; i++){
         if(i%2 === 1){
@@ -20,7 +20,7 @@ function arrayCount2(){
         }
     }
     console.log(array2);
-};
+};*/
 /*=======================*/
 /*
 var array3 = [];
@@ -51,7 +51,7 @@ function arrayCount3(){
     console.log(array3);
 };*/
 /*=======================*/
-var array3 = [];
+/*var array3 = [];
 var sum = 0;
 function arrayCount3(){
     for (var i = 0; i < 45; i++){
@@ -61,7 +61,7 @@ function arrayCount3(){
         }
     }
     console.log(sum);
-};
+};*/
 /*=======================*/
 /*
 var array3 = [];
@@ -104,6 +104,7 @@ function fib(num){
 
 fib(10);*/
 
+/*
 var arrayF = [];
 function fib(num){
     for(var i = 0; i < num; i++){
@@ -137,4 +138,36 @@ function func(min, max, step){
     }
 }
 
-func(1, 3, 0.5);
+func(1, 3, 0.5);*/
+
+function task(){
+    var numb = Math.floor(Math.random()*100);
+    for(var i = 0; i < 10; i++){
+        var guessNumbPrompt = prompt("Угадай загаданное число");
+        var guessNumb = parseInt(guessNumbPrompt); // другой вариант конвертации +guessNumbPrompt
+        if(guessNumb !== numb){
+            if(guessNumb > numb){
+                alert("Ваше число больше загаданного!");
+            }else{
+                alert("Ваше число меньше загаданного!");
+            }
+        }else{
+            alert("Поздравляю! Вы угадали число: " + numb);
+            return;
+        }
+    }
+    alert("Вы не угадали число: " + numb);
+};
+
+/*function task(){
+    var str = prompt("Введите число");
+    var numb = str.split("");
+
+    console.log(numb);
+
+    var array = [];
+    for (var i = 0; i < numb.length; i++){
+        array.unshift(numb[i]);
+    }
+    console.log(array);
+};*/
