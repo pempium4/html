@@ -5,7 +5,7 @@ body{
     margin: auto;
 }
 
-p, h3{
+p, h3, pre{
     box-sizing: border-box;
     font-size: 1.4em;
     margin: 0;
@@ -43,6 +43,7 @@ button:hover{
     box-shadow: 0 2px 10px rgba(100, 100, 100, 0.6);
 }
 #res{
+    display: none;
     height: 300px;
     width: 300px;
 }

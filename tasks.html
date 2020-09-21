@@ -12,15 +12,18 @@
     </div>
     <div id="input">
         <p class="p">
-            <input type="number"/> x<sup>2</sup> + <input type="number"/> x + <input type="number"/> = 0
+            <input type="number" id="a" placeholder="a"/> x<sup>2</sup> + <input type="number" id="b" placeholder="b"/> x + <input type="number" id="c" placeholder="c"/> = 0
         </p>
     </div>
     <div id="button">
-        <button class="p" >Решение</button>
+        <button class="p" onclick="result(); showRes('block');">Решение</button>
     </div>
     <div id="res">
         <p class="p">Результат: </p>
-        <div></div>
+        <div>
+            <pre id="D" class="p"></pre>
+            <pre id="roots" class="p"></pre>
+        </div>
     </div>
     <script src="JS/tasks.js"></script>
 </body>

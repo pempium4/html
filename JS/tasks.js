@@ -213,18 +213,48 @@ var str = op("1111");
 console.log(str);*/
 /*===== sum & multiple =====*/
 
+/*===== sqrt equation =====*/
 function sqrtFunc(a, b, c){
+    if (a === 0){
+        return "Ошибка, а ≠ 0";
+    }
     var D = Math.pow(b, 2) - 4 * a * c;
     var x1, x2;
-    if (D){
-        x1 = (-b + Math.sqrt(D)) / 2 * a;
-        x2 = (-b - Math.sqrt(D)) / 2 * a;
+    if (D < 0){
+        return [D];
+    }else if(D > 0){
+        x1 = (-b + Math.sqrt(D)) / (2 * a);
+        x2 = (-b - Math.sqrt(D)) / (2 * a);
         return [D, x1, x2];
     }else{
-        x1 = x2 = -b / 2 * a;
+        x1 = -b / 2 * a;
         return [D, x1];
     }
-}
+};
 
+function result(){
+    var a = document.getElementById("a").value;
+    var b = document.getElementById("b").value;
+    var c = document.getElementById("c").value;
+    var res = sqrtFunc(a, b, c);
+    var D = "Дискриминант = " + res[0];
+    var x;
+    if(res[2]){
+        x = "Корни уравнения: \nx1 = " + res[1].toFixed(2) + "\nx2 = " + res[2].toFixed(2);
+    }else if (res[1]){
+        x = "Корень уравнения: \nx1 = x2 = " + res[1].toFixed(2);
+    }else{
+        x = "Корней нет"
+    }
+    document.getElementById("D").textContent = D;
+    document.getElementById("roots").textContent = x;
+};
+/*===== sqrt equation =====*/
+
+function showRes(state){
+    document.getElementById("res").style.display = state;
+};
+
+/*
 var res = sqrtFunc(1, -2, -3);
-console.log(res);
+console.log(res);*/

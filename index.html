@@ -158,6 +158,15 @@
             }
         }
     </script>
+    <script>
+        function scroll(){
+            var target = $(this).attr('href');
+            $('html, body').animate({
+                scrollTop: $(target).offset().top - 50
+            }, 500)
+        };
+        $('a[href="#top"]').click(scroll);
+    </script>
     <!--<script>
         var name = confirm("Тебя зовут Олег?");
         if(name){
