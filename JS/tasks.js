@@ -144,21 +144,27 @@ function task(){
     var numb = Math.floor(Math.random()*100);
     for(var i = 0; i < 10; i++){
         var guessNumbPrompt = prompt("Угадай загаданное число");
-        var guessNumb = parseInt(guessNumbPrompt); // другой вариант конвертации +guessNumbPrompt
-        if(guessNumb !== numb){
-            if(guessNumb > numb){
-                alert("Ваше число больше загаданного!");
+        if (guessNumbPrompt){
+            var guessNumb = parseInt(guessNumbPrompt); // другой вариант конвертации +guessNumbPrompt
+            if(guessNumb !== numb){
+                if(guessNumb > numb){
+                    alert("Ваше число больше загаданного!");
+                }else{
+                    alert("Ваше число меньше загаданного!");
+                }
             }else{
-                alert("Ваше число меньше загаданного!");
+                alert("Поздравляю! Вы угадали число: " + numb);
+                return;
             }
         }else{
-            alert("Поздравляю! Вы угадали число: " + numb);
             return;
         }
+
     }
     alert("Вы не угадали число: " + numb);
 };
 
+/*===== reverse =====*/
 /*function task(){
     var str = prompt("Введите число");
     var numb = str.split("");
@@ -171,3 +177,54 @@ function task(){
     }
     console.log(array);
 };*/
+
+/*function reverse(num){
+    var numArray = "";
+    for (var i = num.length - 1; i >= 0 ; i--){
+        numArray+=num[i];
+    }
+    return numArray;
+}
+var str = reverse("7563");
+console.log(str);*/
+/*===== reverse =====*/
+
+/*===== factorial =====*/
+function fact(num){
+    if (num){
+        return num * fact(num - 1);
+    }else{
+        return 1;
+    }
+};
+console.log(fact(7));
+/*===== factorial =====*/
+
+/*===== sum & multiple =====*/
+/*function op(num){
+    var result = [0, 1];
+    for (var i = 0; i < num.length; i++){
+        result[0]+=+num[i];
+        result[1]*=+num[i];
+    }
+    return result;
+}
+var str = op("1111");
+console.log(str);*/
+/*===== sum & multiple =====*/
+
+function sqrtFunc(a, b, c){
+    var D = Math.pow(b, 2) - 4 * a * c;
+    var x1, x2;
+    if (D){
+        x1 = (-b + Math.sqrt(D)) / 2 * a;
+        x2 = (-b - Math.sqrt(D)) / 2 * a;
+        return [D, x1, x2];
+    }else{
+        x1 = x2 = -b / 2 * a;
+        return [D, x1];
+    }
+}
+
+var res = sqrtFunc(1, -2, -3);
+console.log(res);
