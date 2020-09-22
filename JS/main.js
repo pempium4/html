@@ -131,3 +131,81 @@ audi.model();*/
 };
 model(nissan);
 ======= constructor ==========*/
+
+/*===== for in =====
+var array = [
+    {
+        "original_name": "Harry Potter and the philosopher's stone",
+        "russian_name": "Гарри Поттер и философский камень",
+        "year": 2001,
+        "actors": [
+            "Daniel Radcliffe",
+            "Rupert Grint",
+            "Emma Watson"
+        ]
+    },
+    {
+        "original_name": "Harry Potter and the chamber of secrets",
+        "russian_name": "Гарри Поттер и тайная комната",
+        "year": 2002,
+        "actors": [
+            "Daniel Radcliffe",
+            "Rupert Grint",
+            "Emma Watson"
+        ]
+    },
+    {
+        "original_name": "Harry Potter and the prisoner of Azkaban",
+        "russian_name": "Гарри Поттер и узник Азкабана",
+        "year": 2004,
+        "actors": [
+            "Daniel Radcliffe",
+            "Rupert Grint",
+            "Emma Watson"
+        ]
+    },
+    {
+        "original_name": "Harry Potter and the Goblet of Fire",
+        "russian_name": "Гарри Поттер и Кубок огня",
+        "year": 2005,
+        "actors": [
+            "Daniel Radcliffe",
+            "Rupert Grint",
+            "Emma Watson"
+        ]
+    }
+];
+for(let i in array){
+    for(let j in array[i]) {
+        if (j === "original_name") {
+            console.log("Movie #" + i + "\nOriginal name: " + array[i][j]);
+        } else if (j === "russian_name") {
+            console.log("Russian name: " + array[i][j]);
+        } else if (j === "year"){
+            console.log("Year: " + array[i][j]);
+        } else{
+            console.log("Actors: ");
+            for(let k in array[i][j]){
+                console.log(array[i][j][k]);
+            }
+        }
+    }
+    console.log("\n");
+};
+===== for in =====*/
+
+/*console.log(`Example: ${array[1]["year"]}`); //or "Example: " + array[1]["year"]*/
+
+/*var age = 15;*/
+/*console.log(age > 18 ? "Вы старше 18 лет" : "Вы младше 18 лет");*/
+/*age === 18 ? console.log("Вам 18 лет") : age > 18 ? console.log("Вы старше 18 лет") : console.log("Вы младше 18 лет");*/
+/*
+switch (age){
+    case 17: console.log("Вам 17 лет");
+        break;
+    case 18: console.log("Вам 18 лет");
+        break;
+    case 19: console.log("Вам 19 лет");
+        break;
+    default: console.log("Непонятно, сколько Вам лет");
+};*/

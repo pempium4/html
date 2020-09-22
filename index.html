@@ -143,7 +143,6 @@
     <script src="JS/mini_game.js"></script>
     <script src="JS/photogallery.js"></script>
     <script src="JS/canvas.js"></script>
-    <script src="JS/tasks.js"></script>
     <script>
         function change(){
             var changer = document.getElementById("changeDesc");
@@ -156,31 +155,50 @@
             }else{
                 $("#changeDesc").text(desc);
             }
-        }
+        };
     </script>
     <script>
+        var offset = $('header').innerHeight(); // получить высоту элемента
         function scroll(){
             var target = $(this).attr('href');
             $('html, body').animate({
-                scrollTop: $(target).offset().top - 50
-            }, 500)
+                scrollTop: $(target).offset().top - offset
+            }, 500);
+            /*$('a[href="#top"]').removeClass('active');
+            $(this).addClass('active');*/
         };
         $('a[href="#top"]').click(scroll);
     </script>
-    <!--<script>
-        var name = confirm("Тебя зовут Олег?");
+    <script>
+        /*var name = confirm("Тебя зовут Олег?");
         if(name){
             console.log("Привет")
         }else{
             console.log("Уйди отсюда")
-        }
-    </script>-->
+        }*/
+    </script>
     <script>
         /*function add(){
             $("#article").append("<p>Lorem ipsum dolor sit amet.</p>"); //добавить элемент
         }*/
         /*$("body").hide().fadeIn(1000);*/
         /*$("iframe").hide().slideDown(2000);*/
+    </script>
+    <script>
+        $('menu > li'); //дочерние
+        jQuery('li + a'); //соседние
+        $('a[href^="#"]'); //начинается
+        jQuery('a[href*="#"]'); //в любом месте
+        $('a[href*="#"]'); //заканчивается
+        jQuery('tr > td:even'); //четные
+        $('tr > td:odd'); //четные
+        jQuery('a:not([href="tel:101"])'); //которые не имеют
+        $('li:has(a)'); //которые имеют
+        jQuery('p:contains(Lorem)'); //содержат слово
+        $('li:first'); //первый элемент
+        jQuery('li:last'); //последний элемент
+        $('div:hidden'); //скрытый
+        jQuery('div:visible'); //видимый
     </script>
 </body>
 </html>

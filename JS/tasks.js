@@ -190,14 +190,14 @@ console.log(str);*/
 /*===== reverse =====*/
 
 /*===== factorial =====*/
-function fact(num){
+/*function fact(num){
     if (num){
         return num * fact(num - 1);
     }else{
         return 1;
     }
 };
-console.log(fact(7));
+console.log(fact(7));*/
 /*===== factorial =====*/
 
 /*===== sum & multiple =====*/
@@ -212,7 +212,9 @@ console.log(fact(7));
 var str = op("1111");
 console.log(str);*/
 /*===== sum & multiple =====*/
+$(function (){
 
+});
 /*===== sqrt equation =====*/
 function sqrtFunc(a, b, c){
     if (a === 0){

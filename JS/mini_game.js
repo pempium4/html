@@ -38,4 +38,28 @@ function game() {
         alert(answer.join(" "));
     }
     alert("Отлично! Вы отгадали слово " + word);
-}
+};
+
+function task(){
+    var numb = Math.floor(Math.random()*100);
+    for(var i = 0; i < 10; i++){
+        var guessNumbPrompt = prompt("Угадай загаданное число");
+        if (guessNumbPrompt){
+            var guessNumb = parseInt(guessNumbPrompt); // другой вариант конвертации +guessNumbPrompt
+            if(guessNumb !== numb){
+                if(guessNumb > numb){
+                    alert("Ваше число больше загаданного!");
+                }else{
+                    alert("Ваше число меньше загаданного!");
+                }
+            }else{
+                alert("Поздравляю! Вы угадали число: " + numb);
+                return;
+            }
+        }else{
+            return;
+        }
+
+    }
+    alert("Вы не угадали число: " + numb);
+};
