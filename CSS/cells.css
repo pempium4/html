@@ -1,0 +1,35 @@
+body{
+    background-color: lightskyblue;
+    max-width: 1280px;
+    min-width: 960px;
+    margin: auto;
+}
+header, footer{
+    background: royalblue;
+    margin: 10px 0;
+    width: 100%;
+}
+article{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+article > div{
+    background: cornflowerblue;
+    color: azure;
+    margin: 2px 0;
+    text-align: center;
+    width: 33%;
+}
+.block{
+    border-radius: 5px;
+    border: 2px solid darkblue;
+    box-sizing: border-box;
+    box-shadow: 0 2px 5px 3px rgba(100, 100, 100, 0.3);
+    height: 200px;
+    padding: 10px;
+}
+article > div:hover{
+    transform: scale(1.05);
+    box-shadow: 0 2px 5px 3px rgba(100, 100, 100, 0.7);
+}
