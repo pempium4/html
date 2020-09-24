@@ -17,12 +17,12 @@
                 <input type="password" placeholder="Введите пароль"/>
             </span>
             <!--<input type="submit" value="Ввойти"/>-->
-            <input class="button" type="reset" value="Войти" onclick="showEl();"/>
+            <input class="button" type="submit" value="Войти"/>
             <input class="button" type="reset" value="Регистрация" onclick="showModal('block');"/>
         </form>
         <p class="title">Hi! I'm Header</p>
         <script>
-            var counter = true;
+            /*var counter = true;
             var input = document.getElementById("input");
             input.hidden = true;
             function showEl(){
@@ -31,14 +31,14 @@
                     $("#input").hide().fadeIn(2000);
                     counter = false;
                 }
-                /*if(counter){
+                /!*if(counter){
                     input.hidden = false;
                     counter = false;
                 }else{
                     input.hidden = true;
                     counter = true;
-                }*/
-            }
+                }*!/
+            }*/
         </script>
     </header>
     <div id="div" class="div">
@@ -183,6 +183,20 @@
         }*/
         /*$("body").hide().fadeIn(1000);*/
         /*$("iframe").hide().slideDown(2000);*/
+    </script>
+    <script>
+        var counter = true;
+        $('#input').hide();
+        $('form > input:first').click(function (e){
+            e.preventDefault();
+            $('#input').fadeIn(1000);
+            console.log($(this));
+            if($('#input input').val() === "" && !counter){
+                e.preventDefault();
+                alert('Введите данные для авторизации!');
+            }
+            counter = false;
+        });
     </script>
     <script>
         $('menu > li'); //дочерние

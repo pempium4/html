@@ -79,7 +79,7 @@ $('article').after(clone);*/
 /*===== устаревшая модель событий =====
 var elem = document.getElementById('el');
 function show(){
-    alert("JS ivent model");
+    alert("JS event model");
 };
 elem.onclick = show;
 ===== устаревшая модель событий=====*/
@@ -124,4 +124,29 @@ $('article > div > img').click(function (){
 });
 $('header h1').click(function (){
     $('#img').slideUp(500);
+});
+
+$('form :radio:checked').hide();
+$('form :selected').remove();
+var value = $('textarea').val();
+var selected = $('.formNew :selected').val();
+
+$('select').change(function (){
+    let value = $('select :selected').val();
+    switch (value) {
+        case 1:
+            $('#select').html('<option value="1">Значение №1</option>');
+            break;
+        default:
+            $('#select').html('<option value="1">Значение №1</option><option value="2">Значение №2</option>');
+    }
+});
+
+$('submit').click(function (e){
+    $('#text1').attr('disabled', 'disabled');
+    e.preventDefault();
+});
+$('reset').click(function (e){
+    $('#text1').removeAttr('disabled');
+    e.preventDefault();
 });
