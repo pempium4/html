@@ -4,7 +4,7 @@ body{
     min-width: 960px;
     margin: auto;
 }
-header, footer{
+header, footer, aside{
     background: royalblue;
     margin: 10px 0;
     width: 100%;
@@ -21,15 +21,25 @@ article > div{
     text-align: center;
     width: 33%;
 }
+aside img, div > img{
+    border-radius: 5px;
+    height: 100%;
+    width: 100%;
+}
 .block{
     border-radius: 5px;
     border: 2px solid darkblue;
     box-sizing: border-box;
     box-shadow: 0 2px 5px 3px rgba(100, 100, 100, 0.3);
     height: 200px;
-    padding: 10px;
+    padding: 5px;
 }
 article > div:hover{
     transform: scale(1.05);
     box-shadow: 0 2px 5px 3px rgba(100, 100, 100, 0.7);
+}
+
+aside{
+    display: none;
+    width: inherit;
 }

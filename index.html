@@ -189,7 +189,7 @@
         jQuery('li + a'); //соседние
         $('a[href^="#"]'); //начинается
         jQuery('a[href*="#"]'); //в любом месте
-        $('a[href*="#"]'); //заканчивается
+        $('a[href$="#"]'); //заканчивается
         jQuery('tr > td:even'); //четные
         $('tr > td:odd'); //четные
         jQuery('a:not([href="tel:101"])'); //которые не имеют
@@ -199,6 +199,15 @@
         jQuery('li:last'); //последний элемент
         $('div:hidden'); //скрытый
         jQuery('div:visible'); //видимый
+    </script>
+    <script>
+        $('a[href$="html"]').click(function (e){
+            let a = confirm("Вы действительно хотите перейтин на новую страницу?");
+            if(!a){
+                e.preventDefault(); //отмена стандартного поведения
+                //or return false;
+            }
+        });
     </script>
 </body>
 </html>
