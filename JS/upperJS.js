@@ -98,3 +98,110 @@ console.log(jqElem.parent());
 console.log(jsElem.parentNode);
 
 ===== JS vs jQuery =====*/
+
+/*============================================*/
+
+/*===== creating table =====*/
+const PHONE_NUMBER = {
+    "Firefighters":[
+        ['Number 1', '101'],
+        ['Number 2', '112'],
+        ['Number 3', '01'],
+    ],
+    "Police":[
+        ['Number 1', '102'],
+        ['Number 2', '112']
+    ],
+    "Ambulance":[
+        ['Number 1', '103']
+    ]
+};
+document.querySelector("#table").innerHTML = `<table class="phone"></table>`;
+for (let key in PHONE_NUMBER){
+    let row = document.createElement('tr');
+    row.innerHTML = `<td colspan="2">${key}</td>`;
+    document.querySelector(".phone").appendChild(row);
+    for (let number in PHONE_NUMBER[key]){
+        let rowNumb = document.createElement('tr');
+        rowNumb.innerHTML = `<td>${PHONE_NUMBER[key][number][0]}</td><td>${PHONE_NUMBER[key][number][1]}</td>`
+        document.querySelector(".phone").appendChild(rowNumb);
+    }
+}
+/*===== creating table =====*/
+
+
+console.log((15,85));
+
+for(let i = 10; i--;){
+    console.log(i);
+}
+
+/*==============================*/
+var func = function (name){
+    for (let i = arguments.length; i--;){
+        console.log(arguments[i]);
+    }
+    return "Hello " + name;
+}
+console.log(func("Dmitry", 45, 67));
+/*==============================*/
+
+/*==============================*/
+var func2 = function (callback){
+    var name = "Dmitry";
+    callback(name);
+};
+func2(function (n){
+    console.log("Hi " + n);
+});
+/*====== equals ======*/
+var func21 = function (){
+    return "Oleg";
+}
+var func22 = function (func){
+    console.log("Hi " + func);
+}
+func22(func21());
+/*==============================*/
+
+/*==============================*/
+var func3 = function (){
+    return function (){
+        console.log("Hi");
+    }
+};
+func3()();
+/*==============================*/
+
+/*==============================*/
+var greeting = function (name){
+    return "Hello " + name;
+}("Dmitry");
+console.log(greeting);
+/*==============================*/
+
+/*==============================*/
+var counter = (function(){
+    var count = 0;
+    return function (){
+        return count++;
+    }
+}());
+console.log(counter());
+/*==============================*/
+
+/*==============================*/
+var calculate = function(n){
+    if(n === 0){
+        throw new Error("'n' can't equal to zero!");
+    }
+    return 10/n;
+};
+try {
+    calculate(0);
+}catch (e){
+    console.log("Can't execute calculate: " + e.message);
+}finally {
+    console.log("Try/catch block is finished");
+}
+/*==============================*/
