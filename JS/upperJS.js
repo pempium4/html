@@ -119,7 +119,7 @@ const PHONE_NUMBER = {
 document.querySelector("#table").innerHTML = `<table class="phone"></table>`;
 for (let key in PHONE_NUMBER){
     let row = document.createElement('tr');
-    row.innerHTML = `<td colspan="2">${key}</td>`;
+    row.innerHTML = `<th colspan="2">${key}</th>`;
     document.querySelector(".phone").appendChild(row);
     for (let number in PHONE_NUMBER[key]){
         let rowNumb = document.createElement('tr');
@@ -130,13 +130,14 @@ for (let key in PHONE_NUMBER){
 /*===== creating table =====*/
 
 
+/*
 console.log((15,85));
 
 for(let i = 10; i--;){
     console.log(i);
 }
 
-/*==============================*/
+/!*==============================*!/
 var func = function (name){
     for (let i = arguments.length; i--;){
         console.log(arguments[i]);
@@ -144,9 +145,9 @@ var func = function (name){
     return "Hello " + name;
 }
 console.log(func("Dmitry", 45, 67));
-/*==============================*/
+/!*==============================*!/
 
-/*==============================*/
+/!*==============================*!/
 var func2 = function (callback){
     var name = "Dmitry";
     callback(name);
@@ -154,7 +155,7 @@ var func2 = function (callback){
 func2(function (n){
     console.log("Hi " + n);
 });
-/*====== equals ======*/
+/!*====== equals ======*!/
 var func21 = function (){
     return "Oleg";
 }
@@ -162,25 +163,25 @@ var func22 = function (func){
     console.log("Hi " + func);
 }
 func22(func21());
-/*==============================*/
+/!*==============================*!/
 
-/*==============================*/
+/!*==============================*!/
 var func3 = function (){
     return function (){
         console.log("Hi");
     }
 };
 func3()();
-/*==============================*/
+/!*==============================*!/
 
-/*==============================*/
+/!*==============================*!/
 var greeting = function (name){
     return "Hello " + name;
 }("Dmitry");
 console.log(greeting);
-/*==============================*/
+/!*==============================*!/
 
-/*==============================*/
+/!*==============================*!/
 var counter = (function(){
     var count = 0;
     return function (){
@@ -188,9 +189,9 @@ var counter = (function(){
     }
 }());
 console.log(counter());
-/*==============================*/
+/!*==============================*!/
 
-/*==============================*/
+/!*==============================*!/
 var calculate = function(n){
     if(n === 0){
         throw new Error("'n' can't equal to zero!");
@@ -204,4 +205,10 @@ try {
 }finally {
     console.log("Try/catch block is finished");
 }
-/*==============================*/
+/!*==============================*!/*/
+
+/*===== calculator =====*/
+
+var result = 0;
+
+/*===== calculator =====*/

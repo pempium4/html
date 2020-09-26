@@ -42,15 +42,15 @@ a{
 
 table{
     border-collapse: collapse;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
     color: azure;
     font-size: 1.1em;
     width: 100%;
 }
-td{
+td, th{
     border: 1px solid azure;
     padding: 5px;
 }
-td[colspan='2']{
-    font-weight: bold;
-    text-align: center;
+th{
+    background: darkblue;
 }
