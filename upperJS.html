@@ -12,47 +12,43 @@
     </div>
     <div id="table">
     </div>
-    <div>
-        <table>
-            <tr>
-                <td colspan="4" id="result">Result</td>
-            </tr>
-            <tr>
-                <td colspan="2" id="C">C</td>
-                <td colspan="2" id="backspace">&larr;</td>
-            </tr>
-            <tr>
-                <td id="plus">+</td>
-                <td id="minus">-</td>
-                <td id="multiple">&times;</td>
-                <td id="division">&divide;</td>
-            </tr>
-            <tr>
-                <td id="num7">7</td>
-                <td id="num8">8</td>
-                <td id="num9">9</td>
-                <td id="bracket">(</td>
-            </tr>
-            <tr>
-                <td id="num4">4</td>
-                <td id="num5">5</td>
-                <td id="num6">6</td>
-                <td id="bracket_reverse">)</td>
-            </tr>
-            <tr>
-                <td id="num1">1</td>
-                <td id="num2">2</td>
-                <td id="num3">3</td>
-                <td rowspan="2" id="equal">=</td>
-            </tr>
-            <tr>
-                <td colspan="2" id="num0">0</td>
-                <td id="dot">.</td>
-            </tr>
-        </table>
+    <div class="grid">
+        <div class="grid-items" id="input">
+            <form>
+                <input name="result" value="" type="text" readonly>
+            </form>
+        </div>
+        <div class="grid-items" id="clear" onclick="clean()">C</div>
+        <div class="grid-items" id="backspace" onclick="back()">&larr;</div>
+        <div class="grid-items" onclick="insert('+')">+</div>
+        <div class="grid-items" onclick="insert('-')">-</div>
+        <div class="grid-items" onclick="insert('*')">&times;</div>
+        <div class="grid-items" onclick="insert('/')">/</div>
+        <div class="grid-items" onclick="insert('7')">7</div>
+        <div class="grid-items" onclick="insert('8')">8</div>
+        <div class="grid-items" onclick="insert('9')">9</div>
+        <div class="grid-items" onclick="insert('(')">(</div>
+        <div class="grid-items" onclick="insert('4')">4</div>
+        <div class="grid-items" onclick="insert('5')">5</div>
+        <div class="grid-items" onclick="insert('6')">6</div>
+        <div class="grid-items" onclick="insert(')')">)</div>
+        <div class="grid-items" onclick="insert('1')">1</div>
+        <div class="grid-items" onclick="insert('2')">2</div>
+        <div class="grid-items" onclick="insert('3')">3</div>
+        <div class="grid-items" id="equal" onclick="equal()">=</div>
+        <div class="grid-items" id="zero" onclick="insert('0')">0</div>
+        <div class="grid-items" onclick="insert('.')">.</div>
     </div>
     <div>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi corporis distinctio dolore ducimus facere ipsa iste minus quae, quidem quod reprehenderit sapiente vero vitae? Dolorum praesentium quo repellat similique tenetur vitae voluptates! Iure magnam molestias rem. Accusamus laborum provident qui rem sequi! Accusamus nisi odio sequi vel vero. Aperiam, blanditiis commodi dolores error ex fuga fugiat harum impedit incidunt labore libero maxime minus mollitia nesciunt nisi perspiciatis placeat quas, quasi quibusdam ratione similique sint sunt vel voluptas voluptatibus. Beatae, cum eos ipsam iure odio pariatur similique velit! Aspernatur id itaque odio porro quaerat repudiandae, sapiente. Accusantium dicta libero natus nesciunt?</p>
+    </div>
+    <div id="test-grid">
+        <div>I'm 1-st div</div>
+        <div>I'm 2-nd div</div>
+        <div>I'm 3-rd div</div>
+        <div>I'm 4-th div</div>
+        <div>I'm 5-th div</div>
+        <div>I'm 6-th div</div>
     </div>
     <div>
         <p><a href="#top">Up</a></p>

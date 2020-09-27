@@ -209,6 +209,25 @@ try {
 
 /*===== calculator =====*/
 
-var result = 0;
-
+function insert(num){
+    let val = $('#input input');
+    val.val(val.val() + num);
+}
+function clean(){
+    $('#input input').val(null);
+}
+function back(){
+    let val = $('#input input');
+    val.val((val.val()).slice(0, (val.val()).length-1));
+}
+function equal(){
+    let val = $('#input input');
+    if (val.val()){
+        val.val(eval(val.val()));
+    }
+}
+$('.grid-items:not(#input)').mouseover(function (){
+    $('.grid-items:not(#input)').css('background', '');
+    $(this).css('background', 'coral');
+})
 /*===== calculator =====*/

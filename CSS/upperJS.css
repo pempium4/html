@@ -54,3 +54,87 @@ td, th{
 th{
     background: darkblue;
 }
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+}
+.grid-items{
+    background: cornflowerblue;
+    box-sizing: border-box;
+    box-shadow: none;
+    color: azure;
+    cursor: pointer;
+    font-weight: bolder;
+    line-height: 50px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    user-select: none;
+    width: 100%;
+}
+input{
+    border: none;
+    box-sizing: border-box;
+    font-size: 1.5em;
+    height: 52px;
+    text-align: right;
+    width: 100%;
+}
+#input{
+    grid-column: 1/-1;
+}
+#clear{
+    background: darkblue;
+    grid-column: 1/3;
+}
+#backspace{
+    grid-column: 3/-1;
+}
+#equal{
+    background: indigo;
+    grid-column: 4;
+    grid-row: 6/8;
+    line-height: 100px;
+}
+#zero{
+    grid-column: 1/3;
+}
+
+#test-grid{
+    display: grid;
+    height: 500px;
+    /*grid-gap: 10px;*/
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: 20% 10% 30% 30% 10%;
+    grid-template-areas:
+            "header header header header"
+            "nav nav nav nav"
+            "article article article aside1"
+            "article article article aside2"
+            "footer footer footer footer"
+}
+#test-grid > div{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+#test-grid > div:nth-child(1){
+    grid-area: header;
+}
+#test-grid > div:nth-child(2){
+    grid-area: nav;
+}
+#test-grid > div:nth-child(3){
+    grid-area: article;
+}
+#test-grid > div:nth-child(4){
+    grid-area: aside1;
+}
+#test-grid > div:nth-child(5){
+    grid-area: aside2;
+}
+#test-grid > div:nth-child(6){
+    grid-area: footer;
+}
