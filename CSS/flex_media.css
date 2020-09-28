@@ -1,0 +1,50 @@
+@media screen and (max-width: 720px) and (min-width: 475px){
+    header #top{
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    header #middle{
+        align-items: center;
+        justify-content: center;
+    }
+    header #middle h1{
+        font-size: 2em;
+        width: 474px;
+    }
+    header #middle p{
+        font-size: 1em;
+        width: 454px;
+    }
+}
+@media screen and (max-width: 474px){
+    header #top{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    header #top menu{
+        flex-direction: column;
+    }
+    header #top menu li{
+        margin-bottom: 15px;
+    }
+    header #top menu li a{
+         font-size: 1.25em;
+     }
+
+    header #middle{
+        align-items: center;
+        justify-content: center;
+    }
+    header #middle h1{
+        font-size: 1.25em;
+        width: 320px;
+    }
+    header #middle p{
+        font-size: 1em;
+        width: 320px;
+    }
+    header #middle a{
+        padding: 10px 25px;
+    }
+}
