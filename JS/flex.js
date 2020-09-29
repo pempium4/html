@@ -9,3 +9,10 @@ $('map').hover(function (){
         'filter': 'drop-shadow(2px 2px 4px #211)'
     });
 });
+
+$('a[href="#mainTop"]').click(function (){
+    var target = $(this).attr('href');
+    $('html, body').animate({
+        scrollTop: $(target).offset().top
+    }, 500);
+});

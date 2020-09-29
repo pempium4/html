@@ -1,3 +1,22 @@
+@media screen and (max-width: 1200px) and (min-width: 721px){
+    article #mainTop h1{
+        font-size: 1.75em;
+    }
+    article #mainTop p{
+        font-size: 1.15em;
+        width: 560px;
+    }
+    article #mainMiddle div{
+        margin: 10px 25px;
+    }
+    article #mainMiddle div img{
+        height: 100px;
+        width: 100px;
+    }
+    article #mainMiddle div h3{
+        font-size: 1em;
+    }
+}
 @media screen and (max-width: 720px) and (min-width: 475px){
     header #top{
         align-items: center;
@@ -16,6 +35,31 @@
         font-size: 1em;
         width: 454px;
     }
+    article #mainTop h1{
+        font-size: 1.5em;
+    }
+    article #mainTop p{
+        font-size: 1.05em;
+        margin: 10px auto 20px;
+        width: 440px;
+    }
+    article #mainMiddle{
+        flex-wrap: wrap;
+    }
+    article #mainMiddle div{
+        max-width: 200px;
+        margin: 10px 50px;
+    }
+    article #mainMiddle div img{
+        height: 100px;
+        width: 100px;
+    }
+    article #mainMiddle div h3{
+        font-size: 1em;
+    }
+    article #mainMiddle div p{
+        width: 280px;
+    }
 }
 @media screen and (max-width: 474px){
     header #top{
@@ -31,7 +75,6 @@
     header #top menu li a{
          font-size: 1.25em;
      }
-
     header #middle{
         align-items: center;
         justify-content: center;
@@ -46,5 +89,30 @@
     }
     header #middle a{
         padding: 10px 25px;
+    }
+    article #mainTop h1{
+        font-size: 1.25em;
+    }
+    article #mainTop p{
+        font-size: 1em;
+        margin: 10px auto 10px;
+        width: 320px;
+    }
+    article #mainMiddle{
+        display: flex;
+        flex-direction: column;
+    }
+    article #mainMiddle div{
+        margin: 5px 25px;
+    }
+    article #mainMiddle div img{
+        height: 100px;
+        width: 100px;
+    }
+    article #mainMiddle div h3{
+        font-size: 1em;
+    }
+    article #mainMiddle div p{
+        width: 280px;
     }
 }
