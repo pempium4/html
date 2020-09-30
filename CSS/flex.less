@@ -1,0 +1,192 @@
+body{
+  margin: 0;
+  min-width: 320px;
+  a{
+    color: azure;
+    text-decoration: none;
+  }
+}
+
+.middle{
+  display: flex;
+  color: azure;
+  flex-direction: column;
+  font-family: 'Arial', 'Impact', monospace;
+  justify-content: space-around;
+  text-align: center;
+  text-shadow: 2px 2px 2px #322;
+  h1{
+    font-size: 3em;
+    margin: 10px;
+    text-transform: uppercase;
+    span{
+      color: crimson;
+    }
+  }
+  a{
+    border: 3px solid crimson;
+    box-shadow: 2px 2px 4px rgba(1, 10, 10, 0.5);
+    color: crimson;
+    font-size: 1.2em;
+    margin: 10px auto;
+    padding: 20px 50px;
+    transition: all .5s ease-in-out;
+    text-transform: capitalize;
+    &:hover{
+      background: crimson;
+      color: azure;
+      box-shadow: 2px 2px 6px rgba(10, 10, 10, 0.75);
+      transform: scale(1.025);
+    }
+  }
+}
+.arrowDown{
+    background: crimson;
+    box-shadow: 2px 2px 4px rgba(1, 10, 10, 0.5);
+    border-radius: 50%;
+    margin: 20px auto;
+    padding: 10px 15px;
+    &:hover{
+      box-shadow: 2px 2px 6px rgba(10, 10, 10, 0.75);
+      transform: scale(1.1);
+    }
+}
+
+.title{
+  display: flex;
+  color: #191919;
+  flex-direction: column;
+  font-family: 'Arial', 'Impact', monospace;
+  text-align: center;
+  h1{
+    border-bottom: 2px solid #191919;
+    display: inline;
+    font-size: 2em;
+    margin: 40px auto 10px;
+    text-shadow: 2px 2px 2px #211;
+    text-transform: uppercase;
+    span{
+      color: crimson;
+    }
+  }
+  p{
+    font-size: 1.3em;
+    margin: 10px auto 40px;
+  }
+}
+.arrowDown2{
+    color: crimson;
+    border: 1px solid crimson;
+    box-shadow: 2px 2px 4px rgba(1, 10, 10, 0.5);
+    border-radius: 50%;
+    margin: 20px auto;
+    padding: 10px 15px;
+    text-decoration: none;
+    &:hover{
+      background: crimson;
+      box-shadow: 2px 2px 6px rgba(10, 10, 10, 0.75);
+      color: azure;
+      transform: scale(1.1);
+    }
+}
+
+
+header {
+  background: url("https://i.redd.it/1pj94zx19y901.png") no-repeat center center;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 972px;
+  text-shadow: 2px 2px 2px #322;
+  #top{
+    display: flex;
+    justify-content: space-around;
+    img{
+      height: 150px;
+      margin-top: 40px;
+      width: 150px;
+    }
+    menu{
+      display: flex;
+      list-style: none;
+      margin-top: 60px;
+      padding: 0;
+      li{
+        a{
+          font-size: 1.5em;
+          padding: 10px;
+          text-transform: uppercase;
+          &:hover{
+            border-bottom: 3px solid crimson;
+            color: crimson;
+          }
+        }
+      }
+    }
+  }
+  .middle{
+    p{
+      font-size: 1.25em;
+      margin: 10px;
+    }
+  }
+}
+
+#main{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  #mainMiddle{
+    display: flex;
+    justify-content: space-around;
+    div{
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      font-family: 'Arial', 'Impact', monospace;
+      margin: 20px 50px;
+      text-align: justify;
+      img{
+        cursor: pointer;
+        height: 150px;
+        margin: 0;
+        padding: 15px;
+        width: 150px;
+        &:hover{
+          transform: scale(1.1);
+        }
+      }
+      h3{
+        font-size: 1.5em;
+        text-align: center;
+        text-decoration: underline;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+#join{
+  align-items: center;
+  background: url("https://i.pinimg.com/originals/ad/a2/ec/ada2ec185c1243721d285d9cfc1f3084.jpg") no-repeat top center;
+  display: flex;
+  color: azure;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 972px;
+  .middle{
+    margin-top: 350px;
+  }
+}
+
+#media{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  iframe{
+    border: 5px solid crimson;
+    height: 675px;
+    margin: 20px auto;
+    width: 1200px;
+  }
+}
