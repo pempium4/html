@@ -2,6 +2,91 @@ body {
   margin: 0;
   min-width: 320px;
 }
+body a {
+  color: azure;
+  text-decoration: none;
+}
+.middle {
+  display: flex;
+  color: azure;
+  flex-direction: column;
+  font-family: 'Arial', 'Impact', monospace;
+  justify-content: space-around;
+  text-align: center;
+  text-shadow: 2px 2px 2px #322;
+}
+.middle h1 {
+  font-size: 3em;
+  margin: 10px;
+  text-transform: uppercase;
+}
+.middle h1 span {
+  color: crimson;
+}
+.middle a {
+  border: 3px solid crimson;
+  box-shadow: 2px 2px 4px rgba(1, 10, 10, 0.5);
+  color: crimson;
+  font-size: 1.2em;
+  margin: 10px auto;
+  padding: 20px 50px;
+  transition: all 0.5s ease-in-out;
+  text-transform: capitalize;
+}
+.middle a:hover {
+  background: crimson;
+  color: azure;
+  box-shadow: 2px 2px 6px rgba(10, 10, 10, 0.75);
+  transform: scale(1.025);
+}
+.arrowDown {
+  background: crimson;
+  box-shadow: 2px 2px 4px rgba(1, 10, 10, 0.5);
+  border-radius: 50%;
+  margin: 20px auto;
+  padding: 10px 15px;
+}
+.arrowDown:hover {
+  box-shadow: 2px 2px 6px rgba(10, 10, 10, 0.75);
+  transform: scale(1.1);
+}
+.title {
+  display: flex;
+  color: #191919;
+  flex-direction: column;
+  font-family: 'Arial', 'Impact', monospace;
+  text-align: center;
+}
+.title h1 {
+  border-bottom: 2px solid #191919;
+  display: inline;
+  font-size: 2em;
+  margin: 40px auto 10px;
+  text-shadow: 2px 2px 2px #211;
+  text-transform: uppercase;
+}
+.title h1 span {
+  color: crimson;
+}
+.title p {
+  font-size: 1.3em;
+  margin: 10px auto 40px;
+}
+.arrowDown2 {
+  color: crimson;
+  border: 1px solid crimson;
+  box-shadow: 2px 2px 4px rgba(1, 10, 10, 0.5);
+  border-radius: 50%;
+  margin: 20px auto;
+  padding: 10px 15px;
+  text-decoration: none;
+}
+.arrowDown2:hover {
+  background: crimson;
+  box-shadow: 2px 2px 6px rgba(10, 10, 10, 0.75);
+  color: azure;
+  transform: scale(1.1);
+}
 header {
   background: url("https://i.redd.it/1pj94zx19y901.png") no-repeat center center;
   display: flex;
@@ -34,135 +119,63 @@ header #top menu li a:hover {
   border-bottom: 3px solid crimson;
   color: crimson;
 }
-header #middle {
-  display: flex;
-  color: azure;
-  flex-direction: column;
-  font-family: 'Arial', cursive;
-  justify-content: space-around;
-  text-align: center;
-  text-shadow: 2px 2px 2px #322;
-}
-header #middle h1 {
-  font-size: 3em;
-  margin: 10px;
-  text-transform: uppercase;
-}
-header #middle h1 span {
-  color: crimson;
-}
-header #middle p {
+header .middle p {
   font-size: 1.25em;
   margin: 10px;
 }
-header #middle a {
-  border: 3px solid crimson;
-  box-shadow: 2px 2px 4px rgba(1, 10, 10, 0.5);
-  color: crimson;
-  font-size: 1.2em;
-  margin: 10px auto;
-  padding: 20px 50px;
-  transition: all 0.5s ease-in-out;
-}
-header #middle a:hover {
-  background: crimson;
-  color: azure;
-  box-shadow: 2px 2px 6px rgba(10, 10, 10, 0.75);
-  transform: scale(1.025);
-}
-header #bottom {
-  display: flex;
-  justify-content: center;
-}
-header #bottom a {
-  background: crimson;
-  box-shadow: 2px 2px 4px rgba(1, 10, 10, 0.5);
-  border-radius: 50%;
-  margin: 20px;
-  padding: 10px 15px;
-}
-header #bottom a:hover {
-  box-shadow: 2px 2px 6px rgba(10, 10, 10, 0.75);
-  transform: scale(1.1);
-}
-header a {
-  color: azure;
-  text-decoration: none;
-}
-article {
+#main {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  height: 480px;
 }
-article #mainTop {
-  display: flex;
-  color: #191919;
-  flex-direction: column;
-  font-family: 'Arial', cursive;
-  text-align: center;
-}
-article #mainTop h1 {
-  border-bottom: 2px solid #191919;
-  display: inline;
-  font-size: 2em;
-  margin: 40px auto 10px;
-  text-shadow: 2px 2px 2px #211;
-  text-transform: uppercase;
-}
-article #mainTop h1 span {
-  color: crimson;
-}
-article #mainTop p {
-  font-size: 1.3em;
-  margin: 10px auto 40px;
-}
-article #mainMiddle {
+#main #mainMiddle {
   display: flex;
   justify-content: space-around;
 }
-article #mainMiddle div {
+#main #mainMiddle div {
   align-items: center;
   display: flex;
   flex-direction: column;
-  font-family: 'Arial', cursive;
+  font-family: 'Arial', 'Impact', monospace;
   margin: 20px 50px;
   text-align: justify;
 }
-article #mainMiddle div img {
+#main #mainMiddle div img {
   cursor: pointer;
   height: 150px;
   margin: 0;
   padding: 15px;
   width: 150px;
 }
-article #mainMiddle div img:hover {
+#main #mainMiddle div img:hover {
   transform: scale(1.1);
 }
-article #mainMiddle div h3 {
+#main #mainMiddle div h3 {
   font-size: 1.5em;
   text-align: center;
   text-decoration: underline;
   text-transform: uppercase;
 }
-article #mainBottom {
+#join {
+  align-items: center;
+  background: url("https://i.pinimg.com/originals/ad/a2/ec/ada2ec185c1243721d285d9cfc1f3084.jpg") no-repeat top center;
   display: flex;
-  justify-content: center;
-}
-article #mainBottom a {
-  border: 1px solid crimson;
-  box-shadow: 2px 2px 4px rgba(1, 10, 10, 0.5);
-  border-radius: 50%;
-  margin: 20px;
-  padding: 10px 15px;
-}
-article #mainBottom a:hover {
-  background: crimson;
-  box-shadow: 2px 2px 6px rgba(10, 10, 10, 0.75);
   color: azure;
-  transform: scale(1.1);
+  justify-content: space-between;
+  flex-direction: column;
+  height: 972px;
 }
-article a {
-  color: crimson;
-  text-decoration: none;
+#join .middle {
+  margin-top: 350px;
+}
+#media {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+#media iframe {
+  border: 5px solid crimson;
+  height: 675px;
+  margin: 20px auto;
+  width: 1200px;
 }

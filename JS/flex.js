@@ -10,7 +10,19 @@ $('map').hover(function (){
     });
 });
 
-$('a[href="#mainTop"]').click(function (){
+$('a[href="#main"]').click(function (){
+    var target = $(this).attr('href');
+    $('html, body').animate({
+        scrollTop: $(target).offset().top
+    }, 500);
+});
+$('a[href="#join"]').click(function (){
+    var target = $(this).attr('href');
+    $('html, body').animate({
+        scrollTop: $(target).offset().top
+    }, 500);
+});
+$('a[href="#media"]').click(function (){
     var target = $(this).attr('href');
     $('html, body').animate({
         scrollTop: $(target).offset().top

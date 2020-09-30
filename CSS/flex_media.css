@@ -1,20 +1,24 @@
-@media screen and (max-width: 1200px) and (min-width: 721px){
-    article #mainTop h1{
+@media screen and (max-width: 1240px) and (min-width: 721px){
+    .title h1{
         font-size: 1.75em;
     }
-    article #mainTop p{
+    .title p{
         font-size: 1.15em;
         width: 560px;
     }
-    article #mainMiddle div{
+    #main #mainMiddle div{
         margin: 10px 25px;
     }
-    article #mainMiddle div img{
+    #main #mainMiddle div img{
         height: 100px;
         width: 100px;
     }
-    article #mainMiddle div h3{
+    #main #mainMiddle div h3{
         font-size: 1em;
+    }
+    #media iframe{
+        height: 360px;
+        width: 700px;
     }
 }
 @media screen and (max-width: 720px) and (min-width: 475px){
@@ -23,42 +27,49 @@
         flex-direction: column;
         justify-content: center;
     }
-    header #middle{
+    .middle{
         align-items: center;
         justify-content: center;
     }
-    header #middle h1{
+    .middle h1{
         font-size: 2em;
         width: 474px;
     }
-    header #middle p{
+    .middle p{
         font-size: 1em;
         width: 454px;
     }
-    article #mainTop h1{
+    .middle a{
+        padding: 10px 25px;
+    }
+    .title h1{
         font-size: 1.5em;
     }
-    article #mainTop p{
+    .title p{
         font-size: 1.05em;
         margin: 10px auto 20px;
         width: 440px;
     }
-    article #mainMiddle{
+    #main #mainMiddle{
         flex-wrap: wrap;
     }
-    article #mainMiddle div{
+    #main #mainMiddle div{
         max-width: 200px;
         margin: 10px 50px;
     }
-    article #mainMiddle div img{
+    #main #mainMiddle div img{
         height: 100px;
         width: 100px;
     }
-    article #mainMiddle div h3{
+    #main #mainMiddle div h3{
         font-size: 1em;
     }
-    article #mainMiddle div p{
+    #main #mainMiddle div p{
         width: 280px;
+    }
+    #media iframe{
+        height: 240px;
+        width: 440px;
     }
 }
 @media screen and (max-width: 474px){
@@ -75,44 +86,48 @@
     header #top menu li a{
          font-size: 1.25em;
      }
-    header #middle{
+    .middle{
         align-items: center;
         justify-content: center;
     }
-    header #middle h1{
+    .middle h1{
         font-size: 1.25em;
         width: 320px;
     }
-    header #middle p{
+    .middle p{
         font-size: 1em;
         width: 320px;
     }
-    header #middle a{
-        padding: 10px 25px;
+    .middle a{
+        padding: 5px 15px;
     }
-    article #mainTop h1{
+    .title h1{
         font-size: 1.25em;
     }
-    article #mainTop p{
+    .title p{
         font-size: 1em;
         margin: 10px auto 10px;
         width: 320px;
     }
-    article #mainMiddle{
+    #main #mainMiddle{
         display: flex;
         flex-direction: column;
     }
-    article #mainMiddle div{
+    #main #mainMiddle div{
         margin: 5px 25px;
     }
-    article #mainMiddle div img{
+    #main #mainMiddle div img{
         height: 100px;
         width: 100px;
     }
-    article #mainMiddle div h3{
+    #main #mainMiddle div h3{
         font-size: 1em;
     }
-    article #mainMiddle div p{
+    #main #mainMiddle div p{
         width: 280px;
+    }
+    #media iframe{
+        height: 160px;
+        width: 300px;
     }
 }
