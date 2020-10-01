@@ -158,7 +158,7 @@
     #objectives .title h1{
         margin-bottom: 10px;
     }
-    #objectives .obj{
+    #objectives section:nth-child(odd) .obj, #objectives section:nth-child(even) .obj{
         align-items: center;
         width: 50%;
     }
