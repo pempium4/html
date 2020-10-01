@@ -23,7 +23,7 @@ body a {
 .middle h1 span {
   color: crimson;
 }
-.middle a {
+.btn {
   border: 3px solid crimson;
   box-shadow: 2px 2px 4px rgba(1, 10, 10, 0.5);
   color: crimson;
@@ -33,7 +33,7 @@ body a {
   transition: all 0.5s ease-in-out;
   text-transform: capitalize;
 }
-.middle a:hover {
+.btn:hover {
   background: crimson;
   color: azure;
   box-shadow: 2px 2px 6px rgba(10, 10, 10, 0.75);
@@ -87,6 +87,33 @@ body a {
   color: azure;
   transform: scale(1.1);
 }
+.obj {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Arial', 'Impact', monospace;
+  margin: 20px 50px;
+  text-align: justify;
+}
+.obj img {
+  cursor: pointer;
+  height: 150px;
+  margin: 0;
+  padding: 15px;
+  width: 150px;
+}
+.obj img:hover {
+  transform: scale(1.1);
+}
+.obj h3 {
+  font-size: 1.5em;
+  text-align: center;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+.obj p {
+  font-size: 1.5em;
+}
 header {
   background: url("https://i.redd.it/1pj94zx19y901.png") no-repeat center center;
   display: flex;
@@ -132,30 +159,6 @@ header .middle p {
   display: flex;
   justify-content: space-around;
 }
-#main #mainMiddle div {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  font-family: 'Arial', 'Impact', monospace;
-  margin: 20px 50px;
-  text-align: justify;
-}
-#main #mainMiddle div img {
-  cursor: pointer;
-  height: 150px;
-  margin: 0;
-  padding: 15px;
-  width: 150px;
-}
-#main #mainMiddle div img:hover {
-  transform: scale(1.1);
-}
-#main #mainMiddle div h3 {
-  font-size: 1.5em;
-  text-align: center;
-  text-decoration: underline;
-  text-transform: uppercase;
-}
 #join {
   align-items: center;
   background: url("https://i.pinimg.com/originals/ad/a2/ec/ada2ec185c1243721d285d9cfc1f3084.jpg") no-repeat top center;
@@ -178,4 +181,47 @@ header .middle p {
   height: 675px;
   margin: 20px auto;
   width: 1200px;
+}
+#objectives section:nth-child(odd) {
+  background: #cdcdcd;
+}
+#objectives section:nth-child(odd) .obj {
+  align-items: flex-start;
+}
+#objectives section:nth-child(odd) .obj h3 {
+  border-left: 5px solid crimson;
+  padding-left: 5px;
+}
+#objectives section:nth-child(even) .objective .obj {
+  align-items: flex-end;
+}
+#objectives section:nth-child(even) .objective .obj h3 {
+  border-right: 5px solid crimson;
+  padding-right: 5px;
+}
+#objectives section {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+#objectives .title h1 {
+  margin-bottom: 60px;
+}
+#objectives .objective {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 60px;
+}
+#objectives .obj {
+  width: 33%;
+}
+#objectives .obj .btn {
+  margin: 20px 0;
+  text-align: center;
+}
+#objectives img {
+  border: 5px solid crimson;
+  height: 428px;
+  width: 760px;
 }

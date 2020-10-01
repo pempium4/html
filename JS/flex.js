@@ -10,21 +10,17 @@ $('map').hover(function (){
     });
 });
 
-$('a[href="#main"]').click(function (){
-    var target = $(this).attr('href');
+function anchor(){
+    let target = $(this).attr('href');
     $('html, body').animate({
         scrollTop: $(target).offset().top
     }, 500);
-});
-$('a[href="#join"]').click(function (){
-    var target = $(this).attr('href');
-    $('html, body').animate({
-        scrollTop: $(target).offset().top
-    }, 500);
-});
-$('a[href="#media"]').click(function (){
-    var target = $(this).attr('href');
-    $('html, body').animate({
-        scrollTop: $(target).offset().top
-    }, 500);
-});
+}
+
+$('a[href="#main"]').click(anchor);
+$('a[href="#join"]').click(anchor);
+$('a[href="#media"]').click(anchor);
+$('a[href="#how_to_win"]').click(anchor);
+$('a[href="#stealth"]').click(anchor);
+$('a[href="#spot_the_killer"]').click(anchor);
+$('a[href="#alt_act"]').click(anchor);
