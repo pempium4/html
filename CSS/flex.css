@@ -178,6 +178,7 @@ header .middle p {
 }
 #media iframe {
   border: 5px solid crimson;
+  box-shadow: 2px 2px 4px 4px rgba(0, 0, 0, 0.5);
   height: 675px;
   margin: 20px auto;
   width: 1200px;
@@ -222,6 +223,48 @@ header .middle p {
 }
 #objectives img {
   border: 5px solid crimson;
+  box-shadow: 2px 2px 4px 4px rgba(0, 0, 0, 0.5);
   height: 428px;
   width: 760px;
+}
+#photos {
+  align-items: center;
+  background: #cdcdcd;
+  display: flex;
+  flex-direction: column;
+}
+#photos .filter {
+  border-top: 2px solid crimson;
+  border-bottom: 2px solid crimson;
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 20px 10px;
+}
+#photos .filter button {
+  background: none;
+  border: none;
+  color: crimson;
+  cursor: pointer;
+  font-size: 1.5em;
+  font-family: 'Arial', 'Impact', monospace;
+  padding: 15px 30px;
+  transition: all 0.5s ease-in-out;
+}
+#photos .filter button:hover {
+  background: crimson;
+  color: azure;
+}
+#photos .container_photos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 40px 20px;
+}
+#photos .container_photos div {
+  margin: 5px 5px 0;
+}
+#photos .container_photos div img {
+  box-shadow: 2px 2px 4px 4px rgba(0, 0, 0, 0.5);
+  height: 270px;
+  width: 480px;
 }

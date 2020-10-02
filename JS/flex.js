@@ -24,3 +24,26 @@ $('a[href="#how_to_win"]').click(anchor);
 $('a[href="#stealth"]').click(anchor);
 $('a[href="#spot_the_killer"]').click(anchor);
 $('a[href="#alt_act"]').click(anchor);
+$('a[href="#photos"]').click(anchor);
+
+////////////////////////////////////////////////////////
+
+$('#all').click(function (){
+    $('.container_photos > div').show(500).css('display', 'block');
+});
+$('#et').click(function (){
+    $('.container_photos > div:not([class="et"])').hide(500);
+    $('.container_photos > .et').show(500).css('display', 'block');
+});
+$('#st').click(function (){
+    $('.container_photos > div:not([class="st"])').hide(500);
+    $('.container_photos > .st').show(500).css('display', 'block');
+});
+$('#bg').click(function (){
+    $('.container_photos > div:not([class="bg"])').hide(500);
+    $('.container_photos > .bg').show(500).css('display', 'block');
+});
+$('#bs').click(function (){
+    $('.container_photos > div:not([class="bs"])').hide(500);
+    $('.container_photos > .bs').show(500).css('display', 'block');
+});

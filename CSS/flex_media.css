@@ -33,8 +33,12 @@
     #objectives .objective{
         margin: 20px 20px;
     }
+    #photos .container_photos div img{
+        height: 180px;
+        width: 320px;
+    }
 }
-@media screen and (max-width: 779px) and (min-width: 475px){
+@media screen and (max-width: 779px) and (min-width: 512px){
     header #top{
         align-items: center;
         flex-direction: column;
@@ -95,8 +99,22 @@
     #objectives img{
         display: none;
     }
+    #photos .filter{
+        margin: 40px 10px 10px;
+    }
+    #photos .filter{
+        margin: 40px 10px;
+    }
+    #photos .filter button{
+        font-size: 1em;
+        padding: 10px 15px;
+    }
+    #photos .container_photos div img{
+        height: 225px;
+        width: 400px;
+    }
 }
-@media screen and (max-width: 474px){
+@media screen and (max-width: 511px){
     header #top{
         flex-direction: row;
         justify-content: space-around;
@@ -164,5 +182,19 @@
     }
     #objectives img{
         display: none;
+    }
+    #photos .filter{
+        margin: 20px 0 5px;
+    }
+    #photos .filter{
+        margin: 20px 0;
+    }
+    #photos .filter button{
+        font-size: 1em;
+        padding: 5px 5px;
+    }
+    #photos .container_photos div img{
+        height: 180px;
+        width: 320px;
     }
 }
