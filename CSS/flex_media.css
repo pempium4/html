@@ -1,200 +1,171 @@
-@media screen and (max-width: 1240px) and (min-width: 780px){
-    .btn{
-        padding: 15px 35px;
+@media screen and (max-width: 1280px) and (min-width: 800px){
+    h3{
+        font-size: 2.5em;
     }
-    .title h1{
+    h4{
         font-size: 1.75em;
     }
-    .title p{
+    h5{
+        font-size: 1.5em;
+    }
+    p{
+        font-size: 1.25em;
+        margin: 10px 40px 40px;
+    }
+    .btn{
+        padding: 18px 38px;
         font-size: 1.15em;
-        width: 560px;
     }
-    .obj{
-        margin: 10px 25px;
+    #info #column{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
-    .obj img{
-        height: 100px;
-        width: 100px;
+    #info #column div{
+        max-width: 350px;
     }
-    .obj h3{
-        font-size: 1em;
-    }
-    .obj p{
-        font-size: 1em;
-    }
-    #media iframe{
-        height: 360px;
-        width: 700px;
+    #frame iframe{
+        height: 405px;
+        width: 720px;
     }
     #objectives img{
         height: 270px;
         width: 480px;
     }
-    #objectives .objective{
-        margin: 20px 20px;
+    button{
+        font-size: 1.25em;
     }
-    #photos .container_photos div img{
-        height: 180px;
-        width: 320px;
+    #media .container_photos div img{
+        height: 203px;
+        width: 360px;
+    }
+    footer section div > img{
+        height: 150px;
+        width: 120px;
     }
 }
-@media screen and (max-width: 779px) and (min-width: 512px){
-    header #top{
+@media screen and (max-width: 799px) and (min-width: 480px){
+    header nav{
         align-items: center;
         flex-direction: column;
         justify-content: center;
     }
-    .middle{
-        align-items: center;
-        justify-content: center;
-    }
-    .middle h1{
-        font-size: 2em;
-        width: 474px;
-    }
-    .middle p{
-        font-size: 1em;
-        width: 454px;
-    }
-    .btn{
-        padding: 10px 25px;
-    }
-    .title h1{
+    h3{
         font-size: 1.5em;
     }
-    .title p{
-        font-size: 1.05em;
-        margin: 10px auto 20px;
-        width: 440px;
+    h4{
+        font-size: 1.35em;
     }
-    #main #mainMiddle{
+    h5{
+        font-size: 1.2em;
+    }
+    p{
+        font-size: 1.1em;
+        margin: 10px 40px 40px;
+    }
+    .btn{
+        padding: 15px 30px;
+        font-size: 1.1em;
+    }
+    #info #column{
+        display: flex;
         flex-wrap: wrap;
+        justify-content: center;
     }
-    .obj{
-        max-width: 200px;
-        margin: 10px 50px;
+    #info #column div{
+        max-width: 220px;
     }
-    .obj img{
-        height: 100px;
-        width: 100px;
+    #info #column div p{
+        margin: 10px 0 40px;
     }
-    .obj h3{
-        font-size: 1em;
-    }
-    .obj p{
-        font-size: 1em;
-        width: 280px;
-    }
-    #media iframe{
-        height: 240px;
-        width: 440px;
-    }
-    #objectives .title h1{
-        margin-bottom: 20px;
-    }
-    #objectives section:nth-child(odd) .obj, #objectives section:nth-child(even) .obj{
-        align-items: center;
-        width: 50%;
-    }
-    #objectives img{
-        display: none;
-    }
-    #photos .filter{
-        margin: 40px 10px 10px;
-    }
-    #photos .filter{
-        margin: 40px 10px;
-    }
-    #photos .filter button{
-        font-size: 1em;
-        padding: 10px 15px;
-    }
-    #photos .container_photos div img{
+
+    #frame iframe{
         height: 225px;
         width: 400px;
     }
+    #objectives img{
+        display: none;
+    }
+    button{
+        font-size: 1.15em;
+        padding: 5px 10px;
+    }
+    #media .container_photos div img{
+        height: 225px;
+        width: 400px;
+    }
+    footer section div > img{
+        height: 120px;
+        width: 100px;
+    }
+    footer section div a img{
+        height: 25px;
+        width: 25px;
+    }
 }
-@media screen and (max-width: 511px){
-    header #top{
+@media screen and (max-width: 479px){
+    header{
+        height: 600px;
+    }
+    header nav{
         flex-direction: row;
         justify-content: space-around;
     }
-    header #top menu{
+    header nav menu{
         flex-direction: column;
     }
-    header #top menu li{
-        margin-bottom: 15px;
-    }
-    header #top menu li a{
-         font-size: 1.25em;
-     }
-    .middle{
-        align-items: center;
-        justify-content: center;
-    }
-    .middle h1{
+    h3{
         font-size: 1.25em;
-        width: 320px;
     }
-    .middle p{
+    h4{
+        font-size: 1.15em;
+    }
+    h5{
+        font-size: 1.05em;
+    }
+    p{
         font-size: 1em;
-        width: 320px;
+        margin: 10px 20px 40px;
     }
     .btn{
-        padding: 5px 15px;
-    }
-    .title h1{
-        font-size: 1.25em;
-    }
-    .title p{
+        padding: 10px 20px;
         font-size: 1em;
-        margin: 10px auto 10px;
-        width: 320px;
     }
-    #main #mainMiddle{
+    #info #column{
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
     }
-    .obj{
-        margin: 5px 25px;
+    #info #column div{
+        max-width: 300px;
     }
-    .obj img{
-        height: 100px;
-        width: 100px;
+    #info #column div p{
+        margin: 10px 0 40px;
     }
-    .obj h3{
-        font-size: 1em;
+    #join{
+        height: 600px;
     }
-    .obj p{
-        font-size: 1em;
-        width: 280px;
-    }
-    #media iframe{
-        height: 160px;
+    #frame iframe{
+        height: 170px;
         width: 300px;
-    }
-    #objectives .title h1{
-        margin-bottom: 10px;
-    }
-    #objectives section:nth-child(odd) .obj, #objectives section:nth-child(even) .obj{
-        align-items: center;
-        width: 50%;
     }
     #objectives img{
         display: none;
     }
-    #photos .filter{
-        margin: 20px 0 5px;
-    }
-    #photos .filter{
-        margin: 20px 0;
-    }
-    #photos .filter button{
+    button{
         font-size: 1em;
-        padding: 5px 5px;
+        padding: 2px 5px;
     }
-    #photos .container_photos div img{
-        height: 180px;
-        width: 320px;
+    #media .container_photos div img{
+        height: 170px;
+        width: 300px;
+    }
+    footer section div > img{
+        height: 70px;
+        width: 50px;
+    }
+    footer section div a img{
+        height: 10px;
+        width: 10px;
     }
 }

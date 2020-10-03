@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="CSS/flex_media.css">
 </head>
 <body>
-    <header>
-        <div id="top">
+    <header class="flex_container">
+        <nav>
             <img src="https://i.pinimg.com/originals/62/82/df/6282df9343f1b4bf6a4f823d86a01bfe.png" usemap="#logo">
             <map name="logo">
                 <area shape="poly" coords="20, 40, 75, 7, 130, 40, 130, 110, 75, 142, 20, 110, 20, 40" href="#" alt="Ссылка"/>
@@ -19,129 +19,149 @@
                 <li><a href="#">help</a></li>
                 <li><a href="#">about</a></li>
             </menu>
-        </div>
-        <div class="middle">
-            <h1><span>Death</span>  is not an escape</h1>
+        </nav>
+        <section class="h3">
+            <h3><span>Death</span>  is not an escape</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, illo?</p>
             <a class="btn" href="#">i want</a>
-        </div>
-        <a class="arrowDown" href="#main">&darr;</a>
+        </section>
+        <a class="arrowDown" href="#info">&darr;</a>
     </header>
-    <article id="main">
-        <div class="title">
-            <h1>What are you<span> waiting for?</span></h1>
+    <article>
+        <section id="info" class="flex_container">
+            <h4>What are you<span> waiting for?</span></h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid amet assumenda delectus laudantium sint sunt!</p>
-        </div>
-        <section id="mainMiddle">
-            <div class="obj">
-                <img src="https://pbs.twimg.com/media/D3hprwRXsAAo9vY.png" alt="">
-                <h3>news</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aut doloribus ducimus ea enim, facere facilis fugiat laboriosam minima molestiae necessitatibus officia porro provident quae quod quos sint tenetur, ullam?</p>
+            <div id="column">
+                <div>
+                    <img src="https://pbs.twimg.com/media/D3hprwRXsAAo9vY.png" alt="">
+                    <h5>news</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aut doloribus ducimus ea enim, facere facilis fugiat laboriosam minima molestiae necessitatibus officia porro provident quae quod quos sint tenetur, ullam?</p>
+                </div>
+                <div>
+                    <img src="https://pbs.twimg.com/media/D6U4cNOXsAAFUBI.png" alt="">
+                    <h5>media</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis error illum, pariatur quos sunt unde veniam. Amet architecto commodi dolores eaque eveniet explicabo facilis, itaque, quisquam sint suscipit tempore unde.</p>
+                </div>
+                <div>
+                    <img src="https://pbs.twimg.com/media/D--eDdyXsAEVStM.png" alt="">
+                    <h5>help</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium cum debitis, deleniti dolores earum eos ex exercitationem nesciunt officiis quaerat recusandae reiciendis, voluptates? Cupiditate eveniet iste natus perferendis perspiciatis voluptate.</p>
+                </div>
+                <div>
+                    <img src="https://pbs.twimg.com/media/D5rqWQyWsAIUMHR.png" alt="">
+                    <h5>about</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid, amet aperiam asperiores aspernatur atque autem consequuntur dignissimos dolore incidunt laboriosam modi officia omnis possimus quos recusandae sapiente tempore voluptatem!</p>
+                </div>
             </div>
-            <div class="obj">
-                <img src="https://pbs.twimg.com/media/D6U4cNOXsAAFUBI.png" alt="">
-                <h3>media</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis error illum, pariatur quos sunt unde veniam. Amet architecto commodi dolores eaque eveniet explicabo facilis, itaque, quisquam sint suscipit tempore unde.</p>
-            </div>
-            <div class="obj">
-                <img src="https://pbs.twimg.com/media/D--eDdyXsAEVStM.png" alt="">
-                <h3>help</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium cum debitis, deleniti dolores earum eos ex exercitationem nesciunt officiis quaerat recusandae reiciendis, voluptates? Cupiditate eveniet iste natus perferendis perspiciatis voluptate.</p>
-            </div>
-            <div class="obj">
-                <img src="https://pbs.twimg.com/media/D5rqWQyWsAIUMHR.png" alt="">
-                <h3>about</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid, amet aperiam asperiores aspernatur atque autem consequuntur dignissimos dolore incidunt laboriosam modi officia omnis possimus quos recusandae sapiente tempore voluptatem!</p>
-            </div>
+            <a class="arrowDown2" href="#join">&darr;</a>
         </section>
-        <a class="arrowDown2" href="#join">&darr;</a>
-    </article>
-    <article id="join">
-        <div class="middle">
-            <h1>choose your <span>side</span></h1>
+        <section id="join" class="flex_container">
+            <h3>choose your <span>side</span></h3>
             <a class="btn" href="#">join us</a>
-        </div>
-        <a class="arrowDown" href="#media">&darr;</a>
-    </article>
-    <article id="media">
-        <div class="title">
-            <h1>What are you<span> feeling?</span></h1>
+            <a class="arrowDown" href="#frame">&darr;</a>
+        </section>
+        <section id="frame" class="flex_container h3">
+            <h4>What are you<span> feeling?</span></h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At distinctio eaque fugiat laborum molestias voluptate.</p>
-        </div>
-        <iframe src="https://www.youtobjectivesube.com/embed/ZhXXU0efIEQ" allowfullscreen></iframe>
-        <a class="arrowDown2" href="#how_to_win">&darr;</a>
+            <iframe src="https://www.youtube.com/embed/ZhXXU0efIEQ" frameborder="0" allowfullscreen></iframe>
+            <a class="arrowDown2" href="#objectives">&darr;</a>
+        </section>
+        <section id="objectives">
+            <div id="first">
+                <h4>objectives as<span> a survivor</span></h4>
+                <div class="tip">
+                    <div>
+                        <h5>how to win</h5>
+                        <p>As a Survivor, your main objective is to escape the map and live another day. To achieve this, you must repair 5 Generators to power the 2 Exit Gates while avoiding the Killer.</p>
+                        <a class="btn" href="#">more</a>
+                    </div>
+                    <img src="https://deadbydaylight.com/images/game/survivor_objectives_howtowin.jpg" alt="">
+                </div>
+                <a class="arrowDown" href="#second">&darr;</a>
+            </div>
+            <div id="second">
+                <div class="tip">
+                    <img src="https://deadbydaylight.com/images/game/survivor_objectives_stealth.jpg" alt="">
+                    <div>
+                        <h5>stealth</h5>
+                        <p>Survivors have no means to harm the Killer. To avoid being caught, basic strategies can be used such as crouching behind obstacles, hiding in tall grass, dark corners, or in lockers. The Survivors must be careful when performing fast actions or making loud noises, as these may draw the attention of the Killer.</p>
+                        <a class="btn" href="#">more</a>
+                    </div>
+                </div>
+                <a class="arrowDown2" href="#third">&darr;</a>
+            </div>
+            <div id="third">
+                <div class="tip">
+                    <div>
+                        <h5>spotting the killer</h5>
+                        <p>When the Killer is nearby, a heartbeat sound becomes audible. This sound, called the Terror Radius, becomes more intense the closer the Killer is to a Survivor. Survivors can see a red conical light that follows the Killer around. This Red Stain shows the direction in which the Killer is looking.</p>
+                        <a class="btn" href="#">more</a>
+                    </div>
+                    <img src="https://deadbydaylight.com/images/game/survivor_objectives_spotting.jpg" alt="">
+                </div>
+                <a class="arrowDown" href="#fourth">&darr;</a>
+            </div>
+            <div id="fourth">
+                <div class="tip">
+                    <img src="https://deadbydaylight.com/images/game/survivor_objectives_altruistic.jpg" alt="">
+                    <div>
+                        <h5>altruistic actions</h5>
+                        <p>Survivors can rescue each other from Hooks and prevent the Sacrifice from being fully completed. Survivors can also attempt to blind or stun the Killer, which will also make them drop the Survivor they’re carrying. Every Survivor can heal others from the injured or dying state, whether they have a First Aid Kit or not.</p>
+                        <a class="btn" href="#">more</a>
+                    </div>
+                </div>
+                <a class="arrowDown2" href="#media">&darr;</a>
+            </div>
+        </section>
+        <section id="media">
+            <h4>media <span>section</span></h4>
+            <div class="filter">
+                <button id="all" type="button">All</button>
+                <button id="et" type="button">Hunting</button>
+                <button id="st" type="button">Catching</button>
+                <button id="bg" type="button">Chasing</button>
+                <button id="bs" type="button">Sacrifice</button>
+            </div>
+            <div class="container_photos">
+                <div class="et"><img src="https://deadbydaylight.com/images/game/killer_objectives_howtowin.jpg" alt=""></div>
+                <div class="bg"><img src="https://deadbydaylight.com/images/game/killer_objectives_hunting.jpg" alt=""></div>
+                <div class="et"><img src="https://deadbydaylight.com/images/game/killer_objectives_chasing.jpg" alt=""></div>
+                <div class="bg"><img src="https://deadbydaylight.com/images/game/killer_objectives_attacking.jpg" alt=""></div>
+                <div class="st"><img src="https://deadbydaylight.com/images/game/killer_objectives_transporting.jpg" alt=""></div>
+                <div class="bs"><img src="https://deadbydaylight.com/images/game/killer_objectives_sacrifice.jpg" alt=""></div>
+            </div>
+            <a class="arrowDown" href="#bottom">&darr;</a>
+        </section>
     </article>
-    <article id="objectives">
-        <section id="how_to_win">
-            <div class="title">
-                <h1>objectives as<span> a survivor</span></h1>
+    <footer id="bottom" class="flex_container">
+        <h4>our <span>team</span></h4>
+        <section>
+            <div>
+                <img src="https://cdn.onlinewebfonts.com/svg/img_561954.png" alt="">
+                <h5><span>Dmitry </span>Lensky</h5>
+                <p>Frontend</p>
+                <a href=""><img src="https://cdn1.iconfinder.com/data/icons/social-media-circle-7/512/Circled_Twitter_svg-512.png"></a>
+                <a href=""><img src="https://cdn1.iconfinder.com/data/icons/social-media-circle-7/512/Circled_Instagram_svg-512.png"></a>
+                <a href=""><img src="https://cdn1.iconfinder.com/data/icons/social-media-circle-7/512/Circled_Reddit_svg-512.png"></a>
             </div>
-            <div class="objective">
-                <div class="obj">
-                    <h3>how to win</h3>
-                    <p>As a Survivor, your main objective is to escape the map and live another day. To achieve this, you must repair 5 Generators to power the 2 Exit Gates while avoiding the Killer.</p>
-                    <a class="btn" href="#">more</a>
-                </div>
-                <img src="https://deadbydaylight.com/images/game/survivor_objectives_howtowin.jpg" alt="">
+            <div>
+                <img src="https://cdn.onlinewebfonts.com/svg/img_561954.png" alt="">
+                <h5><span>Nadezhda </span>Epiphanova</h5>
+                <p>CEO</p>
+                <a href=""><img src="https://cdn1.iconfinder.com/data/icons/social-media-circle-7/512/Circled_Twitter_svg-512.png"></a>
+                <a href=""><img src="https://cdn1.iconfinder.com/data/icons/social-media-circle-7/512/Circled_Instagram_svg-512.png"></a>
+                <a href=""><img src="https://cdn1.iconfinder.com/data/icons/social-media-circle-7/512/Circled_Reddit_svg-512.png"></a>
             </div>
-            <a class="arrowDown" href="#stealth">&darr;</a>
+            <div>
+                <img src="https://cdn.onlinewebfonts.com/svg/img_561954.png" alt="">
+                <h5><span>Igor </span>Pankov</h5>
+                <p>Marketing</p>
+                <a href=""><img src="https://cdn1.iconfinder.com/data/icons/social-media-circle-7/512/Circled_Twitter_svg-512.png"></a>
+                <a href=""><img src="https://cdn1.iconfinder.com/data/icons/social-media-circle-7/512/Circled_Instagram_svg-512.png"></a>
+                <a href=""><img src="https://cdn1.iconfinder.com/data/icons/social-media-circle-7/512/Circled_Reddit_svg-512.png"></a>
+            </div>
         </section>
-        <section id="stealth">
-            <div class="objective">
-                <img src="https://deadbydaylight.com/images/game/survivor_objectives_stealth.jpg" alt="">
-                <div class="obj">
-                    <h3>stealth</h3>
-                    <p>Survivors have no means to harm the Killer. To avoid being caught, basic strategies can be used such as crouching behind obstacles, hiding in tall grass, dark corners, or in lockers. The Survivors must be careful when performing fast actions or making loud noises, as these may draw the attention of the Killer.</p>
-                    <a class="btn" href="#">more</a>
-                </div>
-            </div>
-            <a class="arrowDown2" href="#spot_the_killer">&darr;</a>
-        </section>
-        <section id="spot_the_killer">
-            <div class="objective">
-                <div class="obj">
-                    <h3>spotting the killer</h3>
-                    <p>When the Killer is nearby, a heartbeat sound becomes audible. This sound, called the Terror Radius, becomes more intense the closer the Killer is to a Survivor. Survivors can see a red conical light that follows the Killer around. This Red Stain shows the direction in which the Killer is looking.</p>
-                    <a class="btn" href="#">more</a>
-                </div>
-                <img src="https://deadbydaylight.com/images/game/survivor_objectives_spotting.jpg" alt="">
-            </div>
-            <a class="arrowDown" href="#alt_act">&darr;</a>
-        </section>
-        <section id="alt_act">
-            <div class="objective">
-                <img src="https://deadbydaylight.com/images/game/survivor_objectives_altruistic.jpg" alt="">
-                <div class="obj">
-                    <h3>altruistic actions</h3>
-                    <p>Survivors can rescue each other from Hooks and prevent the Sacrifice from being fully completed. Survivors can also attempt to blind or stun the Killer, which will also make them drop the Survivor they’re carrying. Every Survivor can heal others from the injured or dying state, whether they have a First Aid Kit or not.</p>
-                    <a class="btn" href="#">more</a>
-                </div>
-            </div>
-            <a class="arrowDown2" href="#photos">&darr;</a>
-        </section>
-    </article>
-    <article id="photos">
-        <div class="title">
-            <h1>media</h1>
-        </div>
-        <div class="filter">
-            <button id="all" type="button">All</button>
-            <button id="et" type="button">Hunting</button>
-            <button id="st" type="button">Catching</button>
-            <button id="bg" type="button">Chasing</button>
-            <button id="bs" type="button">Sacrifice</button>
-        </div>
-        <div class="container_photos">
-            <div class="et"><img src="https://deadbydaylight.com/images/game/killer_objectives_howtowin.jpg" alt=""></div>
-            <div class="bg"><img src="https://deadbydaylight.com/images/game/killer_objectives_hunting.jpg" alt=""></div>
-            <div class="et"><img src="https://deadbydaylight.com/images/game/killer_objectives_chasing.jpg" alt=""></div>
-            <div class="bg"><img src="https://deadbydaylight.com/images/game/killer_objectives_attacking.jpg" alt=""></div>
-            <div class="st"><img src="https://deadbydaylight.com/images/game/killer_objectives_transporting.jpg" alt=""></div>
-            <div class="bs"><img src="https://deadbydaylight.com/images/game/killer_objectives_sacrifice.jpg" alt=""></div>
-        </div>
-        <a class="btn" href="#">more</a>
-        <a class="arrowDown" href="#">&darr;</a>
-    </article>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="JS/flex.js"></script>
 </body>

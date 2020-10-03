@@ -1,10 +1,10 @@
 $('map').hover(function (){
-    $('#top > img').css({
+    $('nav > img').css({
         'transform': 'scale(1.025)',
         'filter': 'drop-shadow(2px 2px 8px #111)'
     })
 }, function (){
-    $('#top > img').css({
+    $('nav > img').css({
         'transform': 'scale(1)',
         'filter': 'drop-shadow(2px 2px 4px #211)'
     });
@@ -17,14 +17,15 @@ function anchor(){
     }, 500);
 }
 
-$('a[href="#main"]').click(anchor);
+$('a[href="#info"]').click(anchor);
 $('a[href="#join"]').click(anchor);
+$('a[href="#frame"]').click(anchor);
+$('a[href="#objectives"]').click(anchor);
+$('a[href="#second"]').click(anchor);
+$('a[href="#third"]').click(anchor);
+$('a[href="#fourth"]').click(anchor);
 $('a[href="#media"]').click(anchor);
-$('a[href="#how_to_win"]').click(anchor);
-$('a[href="#stealth"]').click(anchor);
-$('a[href="#spot_the_killer"]').click(anchor);
-$('a[href="#alt_act"]').click(anchor);
-$('a[href="#photos"]').click(anchor);
+$('a[href="#bottom"]').click(anchor);
 
 ////////////////////////////////////////////////////////
 
