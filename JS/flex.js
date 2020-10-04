@@ -10,22 +10,28 @@ $('map').hover(function (){
     });
 });
 
-function anchor(){
+$('a[href^="#"]').click(function(){
     let target = $(this).attr('href');
     $('html, body').animate({
         scrollTop: $(target).offset().top
     }, 500);
-}
+});
 
-$('a[href="#info"]').click(anchor);
-$('a[href="#join"]').click(anchor);
-$('a[href="#frame"]').click(anchor);
-$('a[href="#objectives"]').click(anchor);
-$('a[href="#second"]').click(anchor);
-$('a[href="#third"]').click(anchor);
-$('a[href="#fourth"]').click(anchor);
-$('a[href="#media"]').click(anchor);
-$('a[href="#bottom"]').click(anchor);
+var anchor = $('a[href="#top"]');
+
+$(window).scroll(function (){
+    if($(window).scrollTop() >= $('header').height()){
+        anchor.fadeIn(500).css('display', 'block');
+    }else{
+        anchor.fadeOut(500);
+    }
+});
+
+/*
+$(window).scrollTop(); //Dist between axis Y=0 (doc) to current Y
+$(window).height(); //Height of current window
+$('footer').offset().top; //Elem offset from axis Y=0 (doc)
+*/
 
 ////////////////////////////////////////////////////////
 

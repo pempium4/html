@@ -18,7 +18,9 @@ h3 span {
   color: #dc143c;
 }
 h4 {
+  border-bottom: 2px solid #696969;
   color: #696969;
+  display: inline-block;
   font-family: 'Arial', monospace;
   font-size: 2em;
   margin: 40px auto 10px;
@@ -102,7 +104,7 @@ button:hover {
 }
 header {
   background: url("https://i.redd.it/1pj94zx19y901.png") no-repeat center center;
-  height: 972px;
+  height: 969px;
 }
 header nav {
   display: flex;
@@ -153,7 +155,7 @@ header nav menu li a:hover {
   background: url("https://i.pinimg.com/originals/ad/a2/ec/ada2ec185c1243721d285d9cfc1f3084.jpg") no-repeat top center;
   color: #d3d3d3;
   justify-content: center;
-  height: 972px;
+  height: 969px;
   position: relative;
 }
 #join .arrowDown {
@@ -237,6 +239,7 @@ footer section {
 }
 footer section div img {
   height: 200px;
+  margin-top: 40px;
   width: 170px;
 }
 footer section div h5 {
@@ -247,6 +250,7 @@ footer section div h5 span {
 }
 footer section div p {
   font-weight: bold;
+  margin-bottom: 10px;
 }
 footer section div a img {
   height: 40px;
@@ -259,6 +263,15 @@ footer section div a img:hover {
 body {
   margin: 0;
   min-width: 360px;
+  position: relative;
+}
+body > a {
+  background: #696969;
+  bottom: 0;
+  display: none;
+  position: fixed;
+  right: 15px;
+  z-index: 1;
 }
 a {
   color: #d3d3d3;

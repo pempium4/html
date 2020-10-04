@@ -94,13 +94,9 @@
         height: 225px;
         width: 400px;
     }
-    footer section div > img{
-        height: 120px;
-        width: 100px;
-    }
-    footer section div a img{
-        height: 25px;
-        width: 25px;
+    footer section{
+        flex-direction: column;
+        justify-content: center;
     }
 }
 @media screen and (max-width: 479px){
@@ -160,12 +156,16 @@
         height: 170px;
         width: 300px;
     }
+    footer section{
+        flex-direction: column;
+        justify-content: center;
+    }
     footer section div > img{
-        height: 70px;
-        width: 50px;
+        height: 120px;
+        width: 100px;
     }
     footer section div a img{
-        height: 10px;
-        width: 10px;
+        height: 25px;
+        width: 25px;
     }
 }
