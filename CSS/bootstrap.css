@@ -1,0 +1,13 @@
+body {
+  margin: 10px;
+}
+div h1 {
+  background-color: green;
+}
+div ul {
+  background-color: lawngreen;
+}
+div p {
+  background-color: greenyellow;
+  text-align: justify;
+}
