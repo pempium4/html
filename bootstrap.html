@@ -5,63 +5,87 @@
     <title>Title</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="CSS/bootstrap.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <div class="container text-center">
-        <h1>Hello world!</h1>
-        <ul class="list-unstyled list-inline">
-            <li class="list-unstyled-item list-inline-item">link #1</li>
-            <li class="list-unstyled-item list-inline-item">link #2</li>
-            <li class="list-unstyled-item list-inline-item">link #3</li>
-            <li class="list-unstyled-item list-inline-item">link #4</li>
-            <li class="list-unstyled-item list-inline-item">link #5</li>
-        </ul>
-        <div class="row">
-            <div class="col-sm-9">
-                <p class="h1">Heading #1</p>
-                <p class="h2">Heading #2</p>
-                <p class="h3">Heading #3</p>
-                <p class="h4">Heading #4</p>
-                <p class="h5">Heading #5</p>
-                <p class="h6">Heading #6</p>
-                <p class="display-1">Display #1</p>
-                <p class="display-2">Display #2</p>
-                <p class="display-3">Display #3</p>
+    <div class="alert alert-success">
+        <p><b>Success!</b> Данные успешно отправлены.</p>
+    </div>
+    <div class="alert alert-danger">
+        <p><b>Error!</b> Произошла ошибка при отправке данных.</p>
+    </div>
+    <div class="container-fluid">
+        <div class="row text-justify">
+            <div class="col-12 text-center">
+                <h1>Hello world!</h1>
+                <ul class="list-unstyled list-inline">
+                    <li class="list-unstyled-item list-inline-item">link #1</li>
+                    <li class="list-unstyled-item list-inline-item">link #2</li>
+                    <li class="list-unstyled-item list-inline-item">link #3</li>
+                    <li class="list-unstyled-item list-inline-item">link #4</li>
+                    <li class="list-unstyled-item list-inline-item">link #5</li>
+                </ul>
+            </div>
+            <div class="col-lg-10 col-sm-8">
                 <p class="display-4">Display #4</p>
-                <table class="table table-hover table-borderless table-dark">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci blanditiis earum provident quidem quo? Ad aut consequatur cumque delectus deleniti dicta dolorem eaque esse ex facilis in inventore iste iure maiores, molestias nobis officia pariatur placeat quis rerum voluptate voluptatum.</p>
+            </div>
+            <div id="img" class="col-lg-2 col-sm-4 col-6 mx-auto">
+                <img src="https://masna.ir/school/howto/img_avatar.png" alt="profile" class="img-fluid img-thumbnail rounded">
+            </div>
+            <div class="col-md-8 table-responsive">
+                <table class="table table-hover table-bordered table-dark">
                     <thead class="table-primary">
-                    <tr>
-                        <th>First</th>
-                        <th>Second</th>
-                        <th>Third</th>
-                    </tr>
+                        <tr>
+                            <th>First</th>
+                            <th>Second</th>
+                            <th>Third</th>
+                            <th>Fourth</th>
+                        </tr>
                     </thead>
                     <tbody>
-                    <tr>
-                        <td>Cell #1</td>
-                        <td>Cell #2</td>
-                        <td>Cell #3</td>
-                    </tr>
-                    <tr>
-                        <td>Cell #1</td>
-                        <td>Cell #2</td>
-                        <td>Cell #3</td>
-                    </tr>
+                        <tr>
+                            <td>Cell #1</td>
+                            <td>Cell #2</td>
+                            <td>Cell #3</td>
+                            <td>Cell #4</td>
+                        </tr>
+                        <tr>
+                            <td>Cell #5</td>
+                            <td>Cell #6</td>
+                            <td>Cell #7</td>
+                            <td>Cell #8</td>
+                        </tr>
                     </tbody>
                 </table>
-                <div class="btn-group btn-block">
-                    <a href="" class="btn btn-outline-info">Button <span class="badge badge-primary">#1</span></a>
-                    <a href="" class="btn btn-outline-info">Button <span class="badge badge-primary">#2</span></a>
-                    <a href="" class="btn btn-outline-info">Button <span class="badge badge-primary">#3</span></a></div>
             </div>
-            <div class="col-sm-3">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium alias assumenda atque autem consequatur consequuntur cumque cupiditate delectus doloremque, eaque earum facilis id in ipsum iste iusto labore libero magnam modi molestias nostrum numquam quibusdam rem, sed similique sit velit voluptate voluptatibus voluptatum? Ad at quae quod tenetur voluptatem?</p>
-                <kbd>Ctrl</kbd> + <kbd>F5</kbd>
-                <img class="img-fluid img-thumbnail" src="https://www.claremontmedicalpractice.co.uk/themes/custom/claremont/images/galleryicon.png" alt="">
+            <div class="col-md-4">
+                <p class="h2">Heading #2</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto molestias, nihil? Corporis fugiat iste iusto mollitia officiis provident quam sit?</p>
+                <div class="btn-group btn-block">
+                    <a href="#" class="btn btn-success" role="button">Success</a>
+                    <a href="#" class="btn btn-danger" role="button">Danger</a>
+                    <script>
+                        $('.btn-success').click(function (){
+                            $('.alert-success').slideDown(500).css('display', 'block');
+                            setTimeout(function(){
+                                $('.alert-success').slideUp(500);
+                            }, 2000);
+                        });
+                        $('.btn-danger').click(function (){
+                            $('.alert-danger').slideDown(500).css('display', 'block');
+                            setTimeout(function(){
+                                $('.alert-danger').slideUp(500);
+                            }, 2000);
+                        });
+                    </script>
+                </div>
+            </div>
+            <div class="jumbotron col-12 text-center">
+                <p class="display-2">Warning!</p>
             </div>
         </div>
     </div>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

@@ -1,13 +1,19 @@
 body {
-  margin: 10px;
+  min-width: 360px;
+  position: relative;
 }
-div h1 {
-  background-color: green;
+body .alert {
+  top: 10px;
+  display: none;
+  left: 10%;
+  right: 10%;
+  position: absolute;
+  z-index: 1;
 }
-div ul {
-  background-color: lawngreen;
+body .row > div {
+  border: 1px solid #333;
 }
-div p {
-  background-color: greenyellow;
-  text-align: justify;
+body #img {
+  display: flex;
+  align-items: center;
 }
