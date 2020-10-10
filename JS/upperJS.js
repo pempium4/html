@@ -231,3 +231,66 @@ $('.grid-items:not(#input)').mouseover(function (){
     $(this).css('background', 'coral');
 })
 /*===== calculator =====*/
+
+/*===== js elem-control =====*/
+
+$('#add').click(function (){
+    let info = prompt("Введите текст");
+    if (info === null){
+        return;
+    }
+    let p = document.createElement('p');
+    let text = document.createTextNode(info);
+    p.appendChild(text);
+
+    let div = document.getElementById('changeText');
+    div.appendChild(p);
+})
+
+$('#remove').click(function (){
+    let div = document.getElementById('changeText');
+    let p = document.querySelectorAll('#changeText p');
+    if (p[0] === undefined){
+        return;
+    }
+    div.removeChild(p[0]);
+})
+
+$('#replace').click(function (){
+    let div = document.getElementById('changeText');
+    let p = document.querySelectorAll('#changeText p');
+    if (p[0] === undefined){
+        return;
+    }
+    let info = prompt("Введите текст");
+    if (info === null){
+        return;
+    }
+    let newP = document.createElement('p');
+    let text = document.createTextNode(info);
+    newP.appendChild(text);
+
+    div.replaceChild(newP, p[0]);
+})
+
+let div = document.getElementById('date');
+div.onclick = function (){
+    let date = document.createTextNode(Date());
+    let div = document.getElementById('dateBlock');
+    div.appendChild(date);
+    div.value = div.value.toUpperCase();
+}
+
+function validate(){
+    let n1 = document.getElementById('num1');
+    let n2 = document.getElementById('num2');
+    if(n1.value !== "" && n2.value !== ""){
+        if(n1.value === n2.value){
+            return true;
+        }
+    }
+    alert("The values should be equal and not blank");
+    return false;
+}
+
+/*===== js elem-control =====*/
