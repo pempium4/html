@@ -1,4 +1,5 @@
 body {
+  background: lightgrey;
   min-width: 360px;
   position: relative;
 }
@@ -9,9 +10,6 @@ body .alert {
   right: 10%;
   position: absolute;
   z-index: 1;
-}
-body .row > div {
-  border: 1px solid #333;
 }
 body #img {
   display: flex;
