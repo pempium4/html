@@ -15,3 +15,94 @@ body #img {
   display: flex;
   align-items: center;
 }
+#flex {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px 0;
+}
+#flex div {
+  align-items: center;
+  background: lawngreen;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  height: 200px;
+}
+#flex div strong {
+  font-size: 4em;
+}
+#flex div img {
+  max-height: 100%;
+  max-width: 100%;
+}
+#navbar {
+  align-items: center;
+  background: slategrey;
+  justify-content: space-between;
+  display: flex;
+}
+#navbar img {
+  padding: 5px;
+  height: 80px;
+  margin-left: 10px;
+}
+#navbar div {
+  flex-grow: 1;
+  margin: 0 10px;
+}
+#navbar div p {
+  color: lightgrey;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 2em;
+  margin: 0;
+  padding: 10px;
+}
+#navbar div p:hover {
+  border-bottom: 2px solid lightgrey;
+}
+#navbar a {
+  color: lightgrey;
+  display: none;
+  font-size: 4em;
+  margin-right: 10px;
+  text-decoration: none;
+}
+/*============== row&col =====================
+@media screen and (min-width: 1140px){
+  #flex div{
+    width: calc(100%/6);
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1139px){
+  #flex div{
+    width: calc(100%/3);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px){
+  #flex div:first-child, #flex div:last-child{
+    width: 100%;
+  }
+  #flex div{
+    width: calc(100%/4);
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767px){
+  #flex div{
+    width: calc(100%/2);
+  }
+}
+@media screen and (max-width: 575px){
+  #flex div{
+    width: 100%;
+  }
+  #navbar{
+    div{
+      display: none;
+    }
+    a{
+      display: block;
+    }
+  }
+}
+================= row&col =====================*/
