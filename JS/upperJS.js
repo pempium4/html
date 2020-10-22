@@ -294,3 +294,99 @@ function validate(){
 }
 
 /*===== js elem-control =====*/
+
+/*===== remembering ======*/
+
+rec = 45;
+/*alert(rec);*/
+
+names = 'John, Mike, Bob';
+
+arr = names.split(', ')
+/*alert(arr.pop());
+alert(arr.shift());
+alert(arr);*/
+/*alert(arr.join(' | '));*/
+
+arr2 = ['I', 'go', 'home'];
+arr2.splice(3, 0, "We", 'go', 'at', 'work');
+/*alert(arr2.reverse());*/
+
+
+/*======= INPUTS ========*/
+
+
+/*======= user input size ========*/
+/*objSize = {
+    height: 'px',
+    width : 'px'
+}
+size = prompt('Введите высоту и ширину через пробел');
+arrSize = size.split(' ');
+
+objSize.height = arrSize[0].concat(objSize.height);
+objSize.width = arrSize[1].concat(objSize.width);
+
+divBlock = document.getElementById('objSize');
+divBlock.style.width = objSize.width;
+divBlock.style.height = objSize.height;
+/*======= user input size ========*/
+
+
+/*======= radio ========*/
+function rad(){
+    radio = document.getElementsByName('rd');
+    for(let i = 0; i < radio.length; i++){
+        if(radio[i].checked){
+            alert(`Выбран ${i} элемент`);
+        }
+    }
+}
+/*======= radio ========*/
+
+/*======= select ========*/
+function select(){
+    let selected = document.getElementById('mySelect').selectedIndex;
+    let option = document.getElementById('mySelect').options;
+    alert('Выбрана опция ' + option[selected].text);
+}
+/*======= select ========*/
+
+/*======= range ========*/
+divBlock = document.getElementById('objSize');
+function range(){
+    var range = document.getElementById('range');
+    document.getElementById('rangeP').value = range.value;
+    divBlock.style.width = `${range.value}px`;
+}
+/*======= range ========*/
+
+/*======= border radius ========*/
+function border() {
+    let arr = [];
+    arr[0] = $('#top_left input:first-child').val();
+    arr[1] = $('#top_right input:first-child').val();
+    arr[2] = $('#bottom_right input:first-child').val();
+    arr[3] = $('#bottom_left input:first-child').val();
+    console.log(arr[1])
+    $('#top_left input:last-child').val(arr[0]);
+    $('#top_right input:last-child').val(arr[1]);
+    $('#bottom_right input:last-child').val(arr[2]);
+    $('#bottom_left input:last-child').val(arr[3]);
+
+    $('#block').css('border-radius', `${arr[0]}px ${arr[1]}px ${arr[2]}px ${arr[3]}px`)
+        .text(`border-radius: ${arr[0]}px ${arr[1]}px ${arr[2]}px ${arr[3]}px;`);
+}
+/*======= border_radius ========*/
+
+/*======= menu ========*/
+document.getElementById('menu').onmouseover = function (){
+    $('#menu p:last-child').css('display', 'block');
+}
+document.getElementById('menu').onmouseleave = function (){
+    $('#menu p:last-child').css('display', 'none');
+}
+/*======= menu ========*/
+
+
+/*======= INPUTS ========*/

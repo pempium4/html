@@ -65,6 +65,39 @@
         <div>I'm 5-th div</div>
         <div>I'm 6-th div</div>
     </div>
+    <div id="objSize">
+        <input type="radio" name="rd" value="1" onchange="rad()"> 1
+        <input type="radio" name="rd" value="2" onchange="rad()"> 2
+        <input type="radio" name="rd" value="3" onchange="rad()"> 3
+    </div>
+    <div>
+        <select name="" id="mySelect" onchange="select()">
+            <option value="">Apple</option>
+            <option value="">Pineapple</option>
+            <option value="">Melon</option>
+            <option value="">Watermelon</option>
+        </select>
+        <input type="range" min="0" max="1000" step="100" oninput="range()" id="range">
+        <input id="rangeP" type="text" dir="ltr">
+    </div>
+    <div>
+        <p id="top_left">Верхний левый угол:
+            <input type="range" min="0" max="50" step="1" oninput="border()" value="0"><input type="text">
+        </p>
+        <p id="top_right">Верхний правый угол:
+            <input type="range" min="0" max="50" step="1" oninput="border()" value="0"><input type="text">
+        </p>
+        <p id="bottom_right">Нижний правый угол:
+            <input type="range" min="0" max="50" step="1" oninput="border()" value="0"><input type="text">
+        </p>
+        <p id="bottom_left">Нижний левый угол:
+            <input type="range" min="0" max="50" step="1" oninput="border()" value="0"><input type="text">
+        </p>
+        <div id="block" style="width: 80%; margin: 2rem auto"></div>
+    </div>
+    <div id="menu">
+        <p style="border: 1px solid white">Menu</p><p style="border: 1px solid white; display: none">Submenu</p>
+    </div>
     <div>
         <p><a href="#top">Up</a></p>
     </div>
