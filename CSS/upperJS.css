@@ -138,3 +138,76 @@ input{
 #test-grid > div:nth-child(6){
     grid-area: footer;
 }
+
+#tab menu{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#tab menu li{
+    color: lightgrey;
+    cursor: pointer;
+    font-size: 2rem;
+    padding: 0 .5rem;
+    /*border: 3px dashed lightgrey;*/
+}
+#tab div{
+    margin: -3px auto 0;
+    width: 100%;
+}
+.tab_border{
+    border: 3px dashed  lightgrey;
+    border-bottom: 3px solid royalblue;
+}
+.tab_content{
+    display: none;
+}
+.show_tab_content{
+    border: 3px dashed  lightgrey;
+    display: block;
+}
+#modal{
+    align-items: center;
+    display: none;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 99;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+html{
+    position: relative;
+}
+#modal span{
+    color: lightgrey;
+    cursor: pointer;
+    font-size: 2rem;
+}
+#modal_bg{
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    display: none;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+}
+#anim{
+    position: relative;
+    padding: 0;
+    height: 500px;
+    width: 500px;
+}
+#mover{
+    margin: 0;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+}

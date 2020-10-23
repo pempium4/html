@@ -379,14 +379,81 @@ function border() {
 }
 /*======= border_radius ========*/
 
-/*======= menu ========*/
-document.getElementById('menu').onmouseover = function (){
-    $('#menu p:last-child').css('display', 'block');
-}
-document.getElementById('menu').onmouseleave = function (){
-    $('#menu p:last-child').css('display', 'none');
-}
-/*======= menu ========*/
+/*======= tab menu ========*/
+/*let tab = $('.tab');
+let tabContent = $('.tab_content');
 
+tab.click(function (){
+    let index = $(this).index();
+    tab.removeClass('tab_border');
+    $(this).addClass('tab_border');
+    tabContent.removeClass('show_tab_content');
+    $(tabContent[index]).addClass('show_tab_content');
+});*/
+
+let tab = document.getElementsByClassName('tab');
+let tabContent = document.getElementsByClassName('tab_content');
+
+for(let i = 0; i < tab.length; i++){
+    tab[i].onclick = function (){
+        for (let j = 0; j < tab.length; j++){
+            tab[j].classList.remove('tab_border');
+            tabContent[j].classList.remove('show_tab_content');
+        }
+        tab[i].classList.add('tab_border');
+        tabContent[i].classList.add('show_tab_content');
+    }
+}
+/*======= tab menu ========*/
+
+/*======= modal window ========*/
+let show = document.getElementById('block');
+let hide = document.getElementById('close');
+
+let modal = document.getElementById('modal');
+let modalBg = document.getElementById('modal_bg');
+
+show.onclick = function (){
+    modal.style.display = 'flex';
+    modalBg.style.display = 'block';
+}
+hide.onclick = function (){
+    modal.style.display = '';
+    modalBg.style.display = '';
+}
+window.onclick = function (event){
+    if(event.target === modalBg){
+        modal.style.display = '';
+        modalBg.style.display = '';
+    }
+}
+/*======= modal window ========*/
+
+/*======= animate ========*/
+let animMover = document.getElementById('mover');
+let offset = 0;
+/*let margin = 0;*/
+
+/*animMover.onclick = function (){
+    let moving = setInterval(function (){
+        animMover.style.marginLeft = margin+'px';
+        margin++;
+        if(margin === 448){
+            clearInterval(moving);
+        }
+    }, 10)
+}*/
+
+animMover.onclick = function (){
+    let moving = setInterval(function (){
+        animMover.style.left = offset+'px';
+        animMover.style.top = offset+'px';
+        offset++;
+        if (offset > 447){
+            clearInterval(moving);
+        }
+    }, 10)
+};
+/*======= animate ========*/
 
 /*======= INPUTS ========*/
