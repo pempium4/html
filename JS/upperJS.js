@@ -456,4 +456,60 @@ animMover.onclick = function (){
 };
 /*======= animate ========*/
 
+/*======= filter ========*/
+let input = document.getElementById('inputFilter');
+let ul = document.getElementById('ulFilter');
+let liArr = ul.getElementsByTagName('li');
+
+function filter(){
+    let res = input.value.toLowerCase();
+    for(let i = 0; i < liArr.length; i++){
+        if(liArr[i].textContent.toLowerCase().indexOf(res) > -1){
+                liArr[i].style.display = '';
+        }else{
+                liArr[i].style.display = 'none';
+        }
+    }
+}
+/*======= filter ========*/
+
+/*======= progressBar ========*/
+let progressBar = document.getElementById('progressBar');
+progressBar.style.width = '0%';
+let width = 0;
+
+let progress = setInterval(function (){
+    if(width < 100){
+        width++;
+        progressBar.textContent = `${width}%`;
+    }else{
+        clearInterval(progress);
+    }
+    progressBar.style.width = `${width}%`;
+}, 30);
+/*======= progressBar ========*/
+
+/*======= toDo ========*/
+let addTask = document.getElementById('addTask');
+
+addTask.onclick = function (){
+    let value = document.getElementById('inputTD').value;
+    let section = document.createElement('section');
+    section.innerHTML = `<p>${value}</p><span>&times;</span>`
+    addTask.after(section);
+}
+let toDo = document.getElementById('toDo');
+let section = toDo.getElementsByTagName('section');
+
+toDo.onclick = function (event){
+    for(let i = 0; i < section.length; i++){
+        if(event.target === section[i].firstChild){
+            section[i].classList.add('done');
+        }else if(event.target === section[i].lastChild){
+            toDo.removeChild(section[i]);
+        }
+    }
+}
+/*======= toDo ========*/
+
 /*======= INPUTS ========*/

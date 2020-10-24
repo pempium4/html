@@ -211,3 +211,43 @@ html{
     width: 50px;
     height: 50px;
 }
+#filter ul{
+    margin: 1rem auto;
+    padding: 0;
+    list-style: none;
+}
+#filter ul li{
+    background: whitesmoke;
+    border: 2px dotted whitesmoke;
+}
+.liHeader{
+    background: gold!important;
+}
+#progressBar{
+    background: repeating-linear-gradient(-45deg, white, white 5px, greenyellow 5px, greenyellow 10px);
+    color: green;
+    text-align: center;
+}
+#toDo{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+#toDo section{
+    align-items: center;
+    background: yellow;
+    display: flex;
+    justify-content: space-between;
+    margin: .5rem 0;
+    width: 100%;
+}
+#toDo section span, #toDo section p{
+    cursor: pointer;
+    color: coral;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+.done{
+    background: greenyellow!important;
+    text-decoration: line-through;
+}
