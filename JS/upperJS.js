@@ -513,3 +513,47 @@ toDo.onclick = function (event){
 /*======= toDo ========*/
 
 /*======= INPUTS ========*/
+
+/*======= VERY dangerous thing ========
+document.addEventListener('click', remove);
+function remove(event){
+    event.preventDefault();
+    event.target.parentNode.removeChild(event.target);
+}
+======= VERY dangerous thing ========*/
+
+/*window.onload = function (){
+    let a = 5;
+    if(true){
+        a = 10;
+    }
+    console.log(a);
+}*/
+
+// let divs = document.getElementsByTagName('div');
+/*======= for..in vs for..of ========
+for(let i in divs){
+    console.log(i)
+}
+for(let i of divs){
+    console.log(i)
+}
+======= for..in vs for..of ========*/
+
+/*======= for.Each ========*/
+/*arr = [2,4,5,6];
+arr.forEach(el => {
+    console.log(el + ' elem');
+})*/
+//function() == () => | function(event) == el => | function(a, b) == (a, b) =>
+/*======= for.Each ========*/
+
+/*======= create json ========*/
+// userEmail = document.querySelectorAll('#data input[type=email]');
+userEmail = $('#data input[type=email]');
+userEmail.click(function (){
+    console.log($(this));
+    console.log(this);
+    console.log(userEmail);
+});
+/*======= create json ========*/
